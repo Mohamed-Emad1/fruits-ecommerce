@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:fruitshup/constants.dart';
+import 'package:fruitshup/core/utils/app_text_styles.dart';
 
 import '../../../../../generated/l10n.dart';
 
@@ -10,10 +11,12 @@ class PageViewItem extends StatelessWidget {
       required this.image,
       required this.backgroundImage,
       required this.subtitle,
-      required this.title});
+      required this.title,
+      required this.isVisible});
 
   final String image, backgroundImage, subtitle;
   final Widget title;
+  final bool isVisible;
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -36,11 +39,14 @@ class PageViewItem extends StatelessWidget {
                 right: 0,
                 child: TextButton(
                   onPressed: () {},
-                  child: Padding(
-                    padding: kPadding16,
-                    child: Text(
-                      S.of(context).skip,
-                      style: const TextStyle(color: Colors.black),
+                  child: Visibility(
+                    visible: isVisible,
+                    child: Padding(
+                      padding: kPadding16,
+                      child: Text(
+                        S.of(context).skip,
+                        style: AppTextStyles.regular13,
+                      ),
                     ),
                   ),
                 ),
@@ -56,6 +62,7 @@ class PageViewItem extends StatelessWidget {
           padding: const EdgeInsets.symmetric(horizontal: 16),
           child: Text(
             subtitle,
+            style: AppTextStyles.regular13,
             textAlign: TextAlign.center,
           ),
         ),

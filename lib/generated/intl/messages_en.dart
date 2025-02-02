@@ -32,6 +32,6 @@ class MessageLookup extends MessageLookupByLibrary {
         "start_now": MessageLookupByLibrary.simpleMessage("start now"),
         "title": MessageLookupByLibrary.simpleMessage(
             "Discover a Unique Shopping Experience with FruitHUB"),
-        "welcome_message": MessageLookupByLibrary.simpleMessage("Welcome!")
+        "welcome_message": MessageLookupByLibrary.simpleMessage("Welcome in")
       };
 }

@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:fruitshup/core/utils/app_colors.dart';
-import 'package:fruitshup/generated/l10n.dart';
+import 'package:fruitshup/core/utils/app_text_styles.dart';
 
 class CustomButton extends StatelessWidget {
-  const CustomButton({super.key});
-
+  const CustomButton({super.key, this.onPressed, required this.text});
+  final void Function()? onPressed;
+  final String text;
   @override
   Widget build(BuildContext context) {
     return SizedBox(
@@ -16,8 +17,11 @@ class CustomButton extends StatelessWidget {
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(16),
             )),
-        onPressed: () {},
-        child: Text(S.of(context).start_now),
+        onPressed: onPressed,
+        child: Text(
+          text,
+          style: AppTextStyles.bold16.copyWith(color: Colors.white),
+        ),
       ),
     );
   }

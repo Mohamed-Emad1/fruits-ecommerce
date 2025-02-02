@@ -31,7 +31,6 @@ class MessageLookup extends MessageLookupByLibrary {
         "start_now": MessageLookupByLibrary.simpleMessage("ابدأ الان"),
         "title": MessageLookupByLibrary.simpleMessage(
             "اكتشف تجربة تسوق فريدة مع FruitHUB"),
-        "welcome_message":
-            MessageLookupByLibrary.simpleMessage("مرحبًا بك في FruitHUB")
+        "welcome_message": MessageLookupByLibrary.simpleMessage("مرحبًا بك في")
       };
 }
