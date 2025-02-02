@@ -1,4 +1,7 @@
+import 'package:dots_indicator/dots_indicator.dart';
 import 'package:flutter/material.dart';
+import 'package:fruitshup/core/utils/app_colors.dart';
+import 'package:fruitshup/core/widgets/custom_button.dart';
 import 'package:fruitshup/features/onboarding/presentation/views/widgets/on_boarding_page_view.dart';
 
 class OnBoardingViewBody extends StatelessWidget {
@@ -6,10 +9,27 @@ class OnBoardingViewBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Column(
+    return Column(
       children: [
-        Expanded(
+        const Expanded(
           child: OnBoardingPageView(),
+        ),
+        DotsIndicator(
+          dotsCount: 2,
+          decorator: DotsDecorator(
+            activeColor: AppColors.primaryColor,
+            color: AppColors.primaryColor.withOpacity(0.5),
+          ),
+        ),
+        const SizedBox(
+          height: 29,
+        ),
+        const Padding(
+          padding: EdgeInsets.symmetric(horizontal: 16),
+          child: CustomButton(),
+        ),
+        const SizedBox(
+          height: 42,
         ),
       ],
     );

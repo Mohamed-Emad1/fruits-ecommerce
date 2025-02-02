@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:fruitshup/constants.dart';
 
+import '../../../../../generated/l10n.dart';
+
 class PageViewItem extends StatelessWidget {
   const PageViewItem(
       {super.key,
@@ -34,11 +36,11 @@ class PageViewItem extends StatelessWidget {
                 right: 0,
                 child: TextButton(
                   onPressed: () {},
-                  child: const Padding(
+                  child: Padding(
                     padding: kPadding16,
                     child: Text(
-                      "تخط",
-                      style: TextStyle(color: Colors.black),
+                      S.of(context).skip,
+                      style: const TextStyle(color: Colors.black),
                     ),
                   ),
                 ),
@@ -50,9 +52,12 @@ class PageViewItem extends StatelessWidget {
           height: 64,
         ),
         title,
-        Text(
-          subtitle,
-          textAlign: TextAlign.center,
+        Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 16),
+          child: Text(
+            subtitle,
+            textAlign: TextAlign.center,
+          ),
         ),
       ],
     );
