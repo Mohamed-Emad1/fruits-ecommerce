@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:fruitshup/constants.dart';
+import 'package:fruitshup/core/utils/app_images.dart';
 import 'package:fruitshup/core/utils/app_text_styles.dart';
 import 'package:fruitshup/core/widgets/custom_button.dart';
 import 'package:fruitshup/features/auth/presentation/views/widgets/dont_have_account_widget.dart';
+import 'package:fruitshup/features/auth/presentation/views/widgets/or_divider.dart';
+import 'package:fruitshup/features/auth/presentation/views/widgets/social_login_button.dart';
 import 'package:fruitshup/generated/l10n.dart';
 
 import '../../../../../core/utils/app_colors.dart';
@@ -33,11 +36,13 @@ class LoginViewBody extends StatelessWidget {
               textInputType: TextInputType.visiblePassword,
             ),
             kSizedBox16,
-            Text(
-              textAlign: TextAlign.end,
-              S.of(context).forget_password,
-              style: AppTextStyles.regular13
-                  .copyWith(color: AppColors.lightPrimaryColor),
+            Align(
+              alignment: Alignment.centerLeft,
+              child: Text(
+                S.of(context).forget_password,
+                style: AppTextStyles.regular13
+                    .copyWith(color: AppColors.lightPrimaryColor),
+              ),
             ),
             kSizedBox16,
             kSizedBox16,
@@ -45,13 +50,31 @@ class LoginViewBody extends StatelessWidget {
             kSizedBox16,
             kSizedBox16,
             const DontHaveAccountWidget(),
-
-            
+            const SizedBox(
+              height: 49,
+            ),
+            const OrDivider(),
+            kSizedBox16,
+            SocialLoginButton(
+              onPressed: () {},
+              text: S.of(context).google,
+              image: Assets.imagesGoogleIcon,
+            ),
+            kSizedBox16,
+            SocialLoginButton(
+              onPressed: () {},
+              text: S.of(context).apple,
+              image: Assets.imagesAppleIcon,
+            ),
+            kSizedBox16,
+            SocialLoginButton(
+              onPressed: () {},
+              text: S.of(context).facebook,
+              image: Assets.imagesFacebookIcon,
+            ),
           ],
         ),
       ),
     );
   }
 }
-
-

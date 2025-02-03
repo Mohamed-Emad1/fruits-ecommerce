@@ -13,16 +13,16 @@ class DontHaveAccountWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Text.rich(
       TextSpan(
-        style: AppTextStyles.regular16,
+        style: AppTextStyles.semiBold16,
         children: [
           TextSpan(
             text: S.of(context).donot_have_an_account,
-            style: AppTextStyles.regular16.copyWith(color: AppColors.grayText),
+            style: AppTextStyles.semiBold16.copyWith(color: AppColors.grayText),
           ),
           TextSpan(
             text: S.of(context).create_account,
-            style:
-                AppTextStyles.regular16.copyWith(color: AppColors.primaryColor),
+            style: AppTextStyles.semiBold16
+                .copyWith(color: AppColors.primaryColor),
           )
         ],
       ),

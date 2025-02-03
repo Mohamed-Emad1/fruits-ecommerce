@@ -22,6 +22,7 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
+        "apple": MessageLookupByLibrary.simpleMessage("تسجيل بواسطة أبل"),
         "call_to_action": MessageLookupByLibrary.simpleMessage("ابحث وتسوق."),
         "create_account":
             MessageLookupByLibrary.simpleMessage(" قم بإنشاء حساب جديد "),
@@ -30,11 +31,14 @@ class MessageLookup extends MessageLookupByLibrary {
         "donot_have_an_account":
             MessageLookupByLibrary.simpleMessage("ليس لديك حساب؟"),
         "email": MessageLookupByLibrary.simpleMessage("البريد الالكتروني"),
+        "facebook": MessageLookupByLibrary.simpleMessage("تسجيل بواسطة فيسبوك"),
         "forget_password":
             MessageLookupByLibrary.simpleMessage("هل نسيت كلمة المرور؟"),
+        "google": MessageLookupByLibrary.simpleMessage("تسجيل بواسطة جوجل"),
         "login": MessageLookupByLibrary.simpleMessage("تسجيل الدخول"),
         "offer": MessageLookupByLibrary.simpleMessage(
             "نقدم لك أفضل الفواكه المختارة بعناية. اطلع على التفاصيل والصور والتقييمات لتتأكد من اختيار الفاكهة المثالية."),
+        "or": MessageLookupByLibrary.simpleMessage("او"),
         "password": MessageLookupByLibrary.simpleMessage("كلمة المرور"),
         "sign_in": MessageLookupByLibrary.simpleMessage("تسجيل الدخول"),
         "skip": MessageLookupByLibrary.simpleMessage("تخطي"),

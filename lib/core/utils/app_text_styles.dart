@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 class AppTextStyles {
   static const String fontFamily = "Cairo";
 
-
   // Regular
   static const regular48 = TextStyle(
     fontSize: 48,
@@ -47,9 +46,9 @@ class AppTextStyles {
     color: Color(0xFF0C0D0D),
   );
 
-  static const regular16 = TextStyle(
+  static const semiBold16 = TextStyle(
     fontSize: 16,
-    fontWeight: FontWeight.w400,
+    fontWeight: FontWeight.w600,
     fontFamily: fontFamily,
     color: Color(0xFF0C0D0D),
   );
@@ -131,6 +130,4 @@ class AppTextStyles {
     fontFamily: fontFamily,
     color: Color(0xFF0C0D0D),
   );
- }
-
-
+}

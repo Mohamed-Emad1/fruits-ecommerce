@@ -13,6 +13,10 @@
     "forget_password": "forget password?",
     "sign_in": "sign in",
     "donot_have_an_account": "Don't have an account?",
-    "create_account": "create new account"
+    "create_account": "create new account",
+    "or": "or",
+    "google":"sign in with google",
+    "apple":"sign in with apple",
+    "facebook":"sign in with facebook"
 
 }
