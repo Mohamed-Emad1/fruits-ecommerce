@@ -1,7 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:fruitshup/constants.dart';
 import 'package:fruitshup/core/utils/app_images.dart';
 import 'package:fruitshup/features/onboarding/presentation/views/onboarding_view.dart';
+
+import '../../../../../core/services/shared_prefrences_singletone.dart';
+import '../../../../auth/presentation/views/login_view.dart';
 
 class SplashViewBody extends StatefulWidget {
   const SplashViewBody({super.key});
@@ -38,10 +42,17 @@ class _SplashViewBodyState extends State<SplashViewBody> {
       ],
     );
   }
-  
+
   void executeNavigation() {
+    bool isOnBoardingViewSeen =
+        SharedPreferencesSingleton.getBool(kisOnBoardingView);
     Future.delayed(const Duration(seconds: 3), () {
-      Navigator.pushReplacementNamed(context, OnboardingView.routeName);
+      if (isOnBoardingViewSeen) {
+        Navigator.pushReplacementNamed(context, LoginView.routeName);
+      }
+      else{
+        Navigator.pushReplacementNamed(context, OnboardingView.routeName);
+      }
     });
   }
 }

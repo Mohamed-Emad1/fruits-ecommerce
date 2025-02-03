@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:fruitshup/constants.dart';
+import 'package:fruitshup/core/services/shared_prefrences_singletone.dart';
 import 'package:fruitshup/core/utils/app_text_styles.dart';
+import 'package:fruitshup/features/auth/presentation/views/login_view.dart';
 
 import '../../../../../generated/l10n.dart';
 
@@ -41,11 +43,20 @@ class PageViewItem extends StatelessWidget {
                   onPressed: () {},
                   child: Visibility(
                     visible: isVisible,
-                    child: Padding(
-                      padding: kPadding16,
-                      child: Text(
-                        S.of(context).skip,
-                        style: AppTextStyles.regular13,
+                    child: GestureDetector(
+                      onTap: () {
+                        Navigator.of(context)
+                            .pushReplacementNamed(LoginView.routeName);
+                        SharedPreferencesSingleton.setBool(
+                            kisOnBoardingView, true);
+                        // SharedPreferencesSingleton.setBool(isOnBoardingViewSeen, true);
+                      },
+                      child: Padding(
+                        padding: kPadding16,
+                        child: Text(
+                          S.of(context).skip,
+                          style: AppTextStyles.regular13,
+                        ),
                       ),
                     ),
                   ),

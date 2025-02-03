@@ -4,7 +4,10 @@ import 'package:fruitshup/core/utils/app_colors.dart';
 import 'package:fruitshup/core/widgets/custom_button.dart';
 import 'package:fruitshup/features/onboarding/presentation/views/widgets/on_boarding_page_view.dart';
 
+import '../../../../../constants.dart';
+import '../../../../../core/services/shared_prefrences_singletone.dart';
 import '../../../../../generated/l10n.dart';
+import '../../../../auth/presentation/views/login_view.dart';
 
 class OnBoardingViewBody extends StatefulWidget {
   const OnBoardingViewBody({super.key});
@@ -64,7 +67,10 @@ class _OnBoardingViewBodyState extends State<OnBoardingViewBody> {
             padding: const EdgeInsets.symmetric(horizontal: 16),
             child: CustomButton(
               text: S.of(context).start_now,
-              onPressed: () {},
+              onPressed: () {
+                Navigator.of(context).pushReplacementNamed(LoginView.routeName);
+                SharedPreferencesSingleton.setBool(kisOnBoardingView, true);
+              },
             ),
           ),
         ),
