@@ -6,6 +6,13 @@
   "offer": "We offer you the finest carefully selected fruits. Browse details, images, and reviews to ensure you choose the perfect fruit.",
   "call_to_action": "Search and Shop.",
     "skip": "skip",
-    "start_now": "start now"
+    "start_now": "start now",
+    "login": "login",
+    "email": "email",
+    "password": "password",
+    "forget_password": "forget password?",
+    "sign_in": "sign in",
+    "donot_have_an_account": "Don't have an account?",
+    "create_account": "create new account"
 
 }
