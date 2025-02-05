@@ -17,6 +17,12 @@
     "or": "or",
     "google":"sign in with google",
     "apple":"sign in with apple",
-    "facebook":"sign in with facebook"
+    "facebook":"sign in with facebook",
+    "new_account":"new account",
+    "full_name": "full name",
+    "create_new_account":"create new account",
+    "have_account":"have an account?",
+    "terms":"By creating an account, you agree to our",
+    "conditions":"Terms & Conditions"
 
 }

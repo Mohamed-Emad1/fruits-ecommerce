@@ -1,13 +1,12 @@
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:fruitshup/core/utils/app_colors.dart';
-import 'package:fruitshup/features/auth/presentation/views/sign_up_view.dart';
 
 import '../../../../../core/utils/app_text_styles.dart';
 import '../../../../../generated/l10n.dart';
 
-class DontHaveAccountWidget extends StatelessWidget {
-  const DontHaveAccountWidget({
+class HaveAnAccount extends StatelessWidget {
+  const HaveAnAccount({
     super.key,
   });
 
@@ -18,15 +17,15 @@ class DontHaveAccountWidget extends StatelessWidget {
         style: AppTextStyles.semiBold16,
         children: [
           TextSpan(
-            text: S.of(context).donot_have_an_account,
+            text: S.of(context).have_account,
             style: AppTextStyles.semiBold16.copyWith(color: AppColors.grayText),
           ),
           TextSpan(
             recognizer: TapGestureRecognizer()
               ..onTap = () {
-                Navigator.pushNamed(context, SignUpView.routeName);
+                Navigator.pop(context);
               },
-            text: S.of(context).create_account,
+            text: S.of(context).create_new_account,
             style: AppTextStyles.semiBold16
                 .copyWith(color: AppColors.primaryColor),
           )

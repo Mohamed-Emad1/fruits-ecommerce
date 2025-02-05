@@ -55,7 +55,7 @@ class PageViewItem extends StatelessWidget {
                         padding: kPadding16,
                         child: Text(
                           S.of(context).skip,
-                          style: AppTextStyles.regular13,
+                          style: AppTextStyles.semiBold13,
                         ),
                       ),
                     ),
@@ -76,7 +76,7 @@ class PageViewItem extends StatelessWidget {
           padding: const EdgeInsets.symmetric(horizontal: 16),
           child: Text(
             subtitle,
-            style: AppTextStyles.regular13,
+            style: AppTextStyles.semiBold13,
             textAlign: TextAlign.center,
           ),
         ),

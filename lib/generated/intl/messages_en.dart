@@ -25,7 +25,11 @@ class MessageLookup extends MessageLookupByLibrary {
         "apple": MessageLookupByLibrary.simpleMessage("sign in with apple"),
         "call_to_action":
             MessageLookupByLibrary.simpleMessage("Search and Shop."),
+        "conditions":
+            MessageLookupByLibrary.simpleMessage("Terms & Conditions"),
         "create_account":
+            MessageLookupByLibrary.simpleMessage("create new account"),
+        "create_new_account":
             MessageLookupByLibrary.simpleMessage("create new account"),
         "description": MessageLookupByLibrary.simpleMessage(
             "Explore our wide collection of premium fresh fruits and get the best deals with high quality."),
@@ -36,8 +40,12 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("sign in with facebook"),
         "forget_password":
             MessageLookupByLibrary.simpleMessage("forget password?"),
+        "full_name": MessageLookupByLibrary.simpleMessage("full name"),
         "google": MessageLookupByLibrary.simpleMessage("sign in with google"),
+        "have_account":
+            MessageLookupByLibrary.simpleMessage("have an account?"),
         "login": MessageLookupByLibrary.simpleMessage("login"),
+        "new_account": MessageLookupByLibrary.simpleMessage("new account"),
         "offer": MessageLookupByLibrary.simpleMessage(
             "We offer you the finest carefully selected fruits. Browse details, images, and reviews to ensure you choose the perfect fruit."),
         "or": MessageLookupByLibrary.simpleMessage("or"),
@@ -45,6 +53,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "sign_in": MessageLookupByLibrary.simpleMessage("sign in"),
         "skip": MessageLookupByLibrary.simpleMessage("skip"),
         "start_now": MessageLookupByLibrary.simpleMessage("start now"),
+        "terms": MessageLookupByLibrary.simpleMessage(
+            "By creating an account, you agree to our"),
         "title": MessageLookupByLibrary.simpleMessage(
             "Discover a Unique Shopping Experience with FruitHUB"),
         "welcome_message": MessageLookupByLibrary.simpleMessage("Welcome in")

@@ -3,6 +3,7 @@ import 'package:fruitshup/features/onboarding/presentation/views/onboarding_view
 import 'package:fruitshup/features/splash/presentation/views/splash_view.dart';
 
 import '../../features/auth/presentation/views/login_view.dart';
+import '../../features/auth/presentation/views/sign_up_view.dart';
 
 Route<dynamic> onGenerateRoute(RouteSettings settings) {
   switch (settings.name) {
@@ -11,6 +12,10 @@ Route<dynamic> onGenerateRoute(RouteSettings settings) {
 
     case OnboardingView.routeName:
       return MaterialPageRoute(builder: (_) => const OnboardingView());
+
+    case SignUpView.routeName:
+      return MaterialPageRoute(builder: (_) => const SignUpView());  
+
       case LoginView.routeName:
       return MaterialPageRoute(builder: (_) => const LoginView());
     default:

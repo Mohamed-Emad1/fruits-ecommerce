@@ -40,7 +40,7 @@ class LoginViewBody extends StatelessWidget {
               alignment: Alignment.centerLeft,
               child: Text(
                 S.of(context).forget_password,
-                style: AppTextStyles.regular13
+                style: AppTextStyles.semiBold13
                     .copyWith(color: AppColors.lightPrimaryColor),
               ),
             ),
