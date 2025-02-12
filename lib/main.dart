@@ -1,13 +1,18 @@
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:fruitshup/core/helper_functions/on_generate_rout.dart';
 import 'package:fruitshup/core/services/shared_prefrences_singletone.dart';
 import 'package:fruitshup/core/utils/app_colors.dart';
 import 'package:fruitshup/features/splash/presentation/views/splash_view.dart';
+import 'package:fruitshup/firebase_options.dart';
 import 'package:fruitshup/generated/l10n.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
   await SharedPreferencesSingleton.init();
   runApp(const MyApp());
 }

@@ -47,7 +47,7 @@ class SignUpViewBody extends StatelessWidget {
             const SizedBox(
               height: 26,
             ),
-            const HaveAnAccount()
+            const HaveAnAccount(),
           ],
         ),
       ),

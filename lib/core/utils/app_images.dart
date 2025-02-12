@@ -10,25 +10,13 @@ class Assets {
   /// assets/images/apple_icon.svg
   static const String imagesAppleIcon = "assets/images/apple_icon.svg";
 
+  /// Assets for imagesCheck
+  /// assets/images/check.svg
+  static const String imagesCheck = "assets/images/check.svg";
+
   /// Assets for imagesFacebookIcon
   /// assets/images/facebook_icon.svg
   static const String imagesFacebookIcon = "assets/images/facebook_icon.svg";
-
-  /// Assets for imagesFontsCairoBold
-  /// assets/images/fonts/Cairo-Bold.ttf
-  static const String imagesFontsCairoBold = "assets/images/fonts/Cairo-Bold.ttf";
-
-  /// Assets for imagesFontsCairoMedium
-  /// assets/images/fonts/Cairo-Medium.ttf
-  static const String imagesFontsCairoMedium = "assets/images/fonts/Cairo-Medium.ttf";
-
-  /// Assets for imagesFontsCairoRegular
-  /// assets/images/fonts/Cairo-Regular.ttf
-  static const String imagesFontsCairoRegular = "assets/images/fonts/Cairo-Regular.ttf";
-
-  /// Assets for imagesFontsCairoSemiBold
-  /// assets/images/fonts/Cairo-SemiBold.ttf
-  static const String imagesFontsCairoSemiBold = "assets/images/fonts/Cairo-SemiBold.ttf";
 
   /// Assets for imagesGoogleIcon
   /// assets/images/google_icon.svg
