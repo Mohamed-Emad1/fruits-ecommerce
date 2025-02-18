@@ -1,20 +1,29 @@
 import 'package:flutter/material.dart';
 import 'package:fruitshup/core/utils/app_colors.dart';
 import 'package:fruitshup/core/utils/app_text_styles.dart';
+import 'package:fruitshup/generated/l10n.dart';
 
-class CustomFromTextField extends StatelessWidget {
-  const CustomFromTextField(
+class CustomTextFormField extends StatelessWidget {
+  const CustomTextFormField(
       {super.key,
       required this.hintText,
       this.textInputType = TextInputType.text,
-      this.suffixIcon });
+      this.suffixIcon, this.onSaved});
 
   final String hintText;
   final TextInputType? textInputType;
   final Widget? suffixIcon;
+  final void Function(String?)? onSaved;
   @override
   Widget build(BuildContext context) {
     return TextFormField(
+      onSaved: onSaved,
+      validator: (value) {
+        if (value == null || value.isEmpty) {
+          return S.of(context).enater_value;
+        }
+        return null;
+      },
       decoration: InputDecoration(
         suffixIcon: suffixIcon,
         fillColor: AppColors.textFromFieldColor,

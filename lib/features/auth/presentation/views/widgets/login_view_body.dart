@@ -9,7 +9,7 @@ import 'package:fruitshup/features/auth/presentation/views/widgets/social_login_
 import 'package:fruitshup/generated/l10n.dart';
 
 import '../../../../../core/utils/app_colors.dart';
-import '../../../../../core/widgets/custom_from_text_field.dart';
+import '../../../../../core/widgets/custom_text_form_field.dart';
 
 class LoginViewBody extends StatelessWidget {
   const LoginViewBody({super.key});
@@ -22,12 +22,12 @@ class LoginViewBody extends StatelessWidget {
         child: Column(
           children: [
             kSizedBox16,
-            CustomFromTextField(
+            CustomTextFormField(
               hintText: S.of(context).email,
               textInputType: TextInputType.emailAddress,
             ),
             kSizedBox16,
-            CustomFromTextField(
+            CustomTextFormField(
               suffixIcon: const Icon(
                 Icons.remove_red_eye,
                 color: Color(0xffC9CECF),

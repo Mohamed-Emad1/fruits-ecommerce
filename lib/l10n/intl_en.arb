@@ -23,6 +23,7 @@
     "create_new_account":"create new account",
     "have_account":"have an account?",
     "terms":"By creating an account, you agree to our",
-    "conditions":"Terms & Conditions"
+    "conditions":"Terms & Conditions",
+    "enater_value":"Please enter some text"
 
 }

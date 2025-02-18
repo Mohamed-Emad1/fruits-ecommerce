@@ -1,5 +1,4 @@
 import 'package:dartz/dartz.dart';
-import 'package:firebase_auth/firebase_auth.dart';
 import 'package:fruitshup/core/errors/custom_exceptions.dart';
 import 'package:fruitshup/core/errors/failure.dart';
 import 'package:fruitshup/core/services/firebase_auth_service.dart';

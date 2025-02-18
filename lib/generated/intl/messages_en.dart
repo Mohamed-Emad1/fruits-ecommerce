@@ -36,6 +36,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "donot_have_an_account":
             MessageLookupByLibrary.simpleMessage("Don\'t have an account?"),
         "email": MessageLookupByLibrary.simpleMessage("email"),
+        "enater_value":
+            MessageLookupByLibrary.simpleMessage("Please enter some text"),
         "facebook":
             MessageLookupByLibrary.simpleMessage("sign in with facebook"),
         "forget_password":

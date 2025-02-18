@@ -289,6 +289,16 @@ class S {
       args: [],
     );
   }
+
+  /// `Please enter some text`
+  String get enater_value {
+    return Intl.message(
+      'Please enter some text',
+      name: 'enater_value',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {
