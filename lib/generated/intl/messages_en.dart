@@ -22,6 +22,8 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
+        "an_error_occurred":
+            MessageLookupByLibrary.simpleMessage("An error occurred"),
         "apple": MessageLookupByLibrary.simpleMessage("sign in with apple"),
         "call_to_action":
             MessageLookupByLibrary.simpleMessage("Search and Shop."),
@@ -36,6 +38,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "donot_have_an_account":
             MessageLookupByLibrary.simpleMessage("Don\'t have an account?"),
         "email": MessageLookupByLibrary.simpleMessage("email"),
+        "email_already_in_use":
+            MessageLookupByLibrary.simpleMessage("Email already in use"),
         "enater_value":
             MessageLookupByLibrary.simpleMessage("Please enter some text"),
         "facebook":
@@ -53,12 +57,15 @@ class MessageLookup extends MessageLookupByLibrary {
         "or": MessageLookupByLibrary.simpleMessage("or"),
         "password": MessageLookupByLibrary.simpleMessage("password"),
         "sign_in": MessageLookupByLibrary.simpleMessage("sign in"),
+        "sign_in_successfully":
+            MessageLookupByLibrary.simpleMessage("Sign in successfully"),
         "skip": MessageLookupByLibrary.simpleMessage("skip"),
         "start_now": MessageLookupByLibrary.simpleMessage("start now"),
         "terms": MessageLookupByLibrary.simpleMessage(
             "By creating an account, you agree to our"),
         "title": MessageLookupByLibrary.simpleMessage(
             "Discover a Unique Shopping Experience with FruitHUB"),
+        "weak_password": MessageLookupByLibrary.simpleMessage("Weak password"),
         "welcome_message": MessageLookupByLibrary.simpleMessage("Welcome in")
       };
 }

@@ -1,7 +1,7 @@
 class UserEntity {
   final String email;
   final String name;
-  final String UserId;
+  final String userId;
 
-  UserEntity(this.UserId, {required this.email, required this.name});
+  UserEntity( {required this.userId,required this.email, required this.name});
 }

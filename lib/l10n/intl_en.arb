@@ -24,6 +24,10 @@
     "have_account":"have an account?",
     "terms":"By creating an account, you agree to our",
     "conditions":"Terms & Conditions",
-    "enater_value":"Please enter some text"
+    "enater_value":"Please enter some text",
+    "weak_password":"Weak password",
+    "email_already_in_use":"Email already in use",
+    "an_error_occurred":"An error occurred",
+    "sign_in_successfully":"Sign in successfully"
 
 }

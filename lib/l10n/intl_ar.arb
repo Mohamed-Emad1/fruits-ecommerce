@@ -23,6 +23,10 @@
   "have_account":"لديك حساب؟",
   "terms":"من خلال إنشاء حساب ، فإنك توافق على",
   "conditions": " الشروط والأحكام الخاصة بنا",
-  "enter_value":"يرجى ادخال قيمة"
+  "enter_value":"يرجى ادخال قيمة",
+  "weak_password":"كلمة المرور ضعيفة",
+  "email_already_in_use":"البريد الالكتروني مستخدم بالفعل",
+  "an_error_occurred":"حدث خطأ",
+  "sign_in_successfully":"تم تسجيل الدخول بنجاح"
   
 }
