@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:fruitshup/core/helper_functions/build_error_bar.dart';
 import 'package:fruitshup/core/widgets/custom_button.dart';
+import 'package:fruitshup/core/widgets/password_filed.dart';
 import 'package:fruitshup/features/auth/presentation/manager/sign_up_cubit/signup_cubit.dart';
 import 'package:fruitshup/features/auth/presentation/views/widgets/terms_and_conditions.dart';
 
@@ -21,6 +23,7 @@ class _SignUpViewBodyState extends State<SignUpViewBody> {
 
   AutovalidateMode autovalidateMode = AutovalidateMode.disabled;
   late String email, password, fullName;
+  late bool isTermsAccepted = false;
   @override
   Widget build(BuildContext context) {
     return Form(
@@ -47,19 +50,15 @@ class _SignUpViewBodyState extends State<SignUpViewBody> {
                 textInputType: TextInputType.emailAddress,
               ),
               kSizedBox16,
-              CustomTextFormField(
-                onSaved: (value) {
-                  password = value!;
-                },
-                suffixIcon: const Icon(
-                  Icons.remove_red_eye,
-                  color: Color(0xffC9CECF),
-                ),
-                hintText: S.of(context).password,
-                textInputType: TextInputType.visiblePassword,
-              ),
+              PasswordField(onSaved: (value) {
+                password = value!;
+              }),
               kSizedBox16,
-              const TermsAndConditions(),
+              TermsAndConditions(
+                onchanged: (value) {
+                  isTermsAccepted = value;
+                },
+              ),
               const SizedBox(
                 height: 30,
               ),
@@ -68,11 +67,16 @@ class _SignUpViewBodyState extends State<SignUpViewBody> {
                 onPressed: () {
                   if (formKey.currentState!.validate()) {
                     formKey.currentState!.save();
-                    BlocProvider.of<SignupCubit>(context)
-                        .createUserWithEmailAndPassword(
-                            email: email,
-                            password: password,
-                            fullName: fullName);
+                    if (isTermsAccepted) {
+                      BlocProvider.of<SignupCubit>(context)
+                          .createUserWithEmailAndPassword(
+                              email: email,
+                              password: password,
+                              fullName: fullName);
+                    } else {
+                      buildErrorBar(
+                          context, S.of(context).terms_and_condiotions);
+                    }a
                   } else {
                     setState(() {
                       autovalidateMode = AutovalidateMode.always;

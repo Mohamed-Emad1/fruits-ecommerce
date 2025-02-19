@@ -27,6 +27,10 @@
   "weak_password":"كلمة المرور ضعيفة",
   "email_already_in_use":"البريد الالكتروني مستخدم بالفعل",
   "an_error_occurred":"حدث خطأ",
-  "sign_in_successfully":"تم تسجيل الدخول بنجاح"
+  "sign_in_successfully":"تم تسجيل الدخول بنجاح",
+  "terms_and_condiotions": "الرجاء الموافقة على الشروط والأحكام الخاصة بنا",
+  "internet_con": "الرجاء التأكد من اتصالك بالانترنت",
+  "user_not_found": "المستخدم غير موجود",
+  "email_or_password": "البريد الإلكتروني او كلمة السر غير صحيح" 
   
 }

@@ -38,12 +38,16 @@ class MessageLookup extends MessageLookupByLibrary {
         "email": MessageLookupByLibrary.simpleMessage("البريد الالكتروني"),
         "email_already_in_use": MessageLookupByLibrary.simpleMessage(
             "البريد الالكتروني مستخدم بالفعل"),
+        "email_or_password": MessageLookupByLibrary.simpleMessage(
+            "البريد الإلكتروني او كلمة السر غير صحيح"),
         "facebook": MessageLookupByLibrary.simpleMessage("تسجيل بواسطة فيسبوك"),
         "forget_password":
             MessageLookupByLibrary.simpleMessage("هل نسيت كلمة المرور؟"),
         "full_name": MessageLookupByLibrary.simpleMessage("الاسم بالكامل"),
         "google": MessageLookupByLibrary.simpleMessage("تسجيل بواسطة جوجل"),
         "have_account": MessageLookupByLibrary.simpleMessage("لديك حساب؟"),
+        "internet_con": MessageLookupByLibrary.simpleMessage(
+            "الرجاء التأكد من اتصالك بالانترنت"),
         "login": MessageLookupByLibrary.simpleMessage("تسجيل الدخول"),
         "new_account": MessageLookupByLibrary.simpleMessage("حساب جديد"),
         "offer": MessageLookupByLibrary.simpleMessage(
@@ -57,8 +61,12 @@ class MessageLookup extends MessageLookupByLibrary {
         "start_now": MessageLookupByLibrary.simpleMessage("ابدأ الان"),
         "terms": MessageLookupByLibrary.simpleMessage(
             "من خلال إنشاء حساب ، فإنك توافق على"),
+        "terms_and_condiotions": MessageLookupByLibrary.simpleMessage(
+            "الرجاء الموافقة على الشروط والأحكام الخاصة بنا"),
         "title": MessageLookupByLibrary.simpleMessage(
             "اكتشف تجربة تسوق فريدة مع FruitHUB"),
+        "user_not_found":
+            MessageLookupByLibrary.simpleMessage("المستخدم غير موجود"),
         "weak_password":
             MessageLookupByLibrary.simpleMessage("كلمة المرور ضعيفة"),
         "welcome_message": MessageLookupByLibrary.simpleMessage("مرحبًا بك في")

@@ -40,6 +40,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "email": MessageLookupByLibrary.simpleMessage("email"),
         "email_already_in_use":
             MessageLookupByLibrary.simpleMessage("Email already in use"),
+        "email_or_password": MessageLookupByLibrary.simpleMessage(
+            "email or password is incorrect"),
         "enater_value":
             MessageLookupByLibrary.simpleMessage("Please enter some text"),
         "facebook":
@@ -50,6 +52,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "google": MessageLookupByLibrary.simpleMessage("sign in with google"),
         "have_account":
             MessageLookupByLibrary.simpleMessage("have an account?"),
+        "internet_con": MessageLookupByLibrary.simpleMessage(
+            "make sure you are connected to the internet"),
         "login": MessageLookupByLibrary.simpleMessage("login"),
         "new_account": MessageLookupByLibrary.simpleMessage("new account"),
         "offer": MessageLookupByLibrary.simpleMessage(
@@ -63,8 +67,12 @@ class MessageLookup extends MessageLookupByLibrary {
         "start_now": MessageLookupByLibrary.simpleMessage("start now"),
         "terms": MessageLookupByLibrary.simpleMessage(
             "By creating an account, you agree to our"),
+        "terms_and_condiotions": MessageLookupByLibrary.simpleMessage(
+            "Please Accept our Terms and conditions"),
         "title": MessageLookupByLibrary.simpleMessage(
             "Discover a Unique Shopping Experience with FruitHUB"),
+        "user_not_found":
+            MessageLookupByLibrary.simpleMessage("user not found"),
         "weak_password": MessageLookupByLibrary.simpleMessage("Weak password"),
         "welcome_message": MessageLookupByLibrary.simpleMessage("Welcome in")
       };

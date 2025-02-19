@@ -28,6 +28,10 @@
     "weak_password":"Weak password",
     "email_already_in_use":"Email already in use",
     "an_error_occurred":"An error occurred",
-    "sign_in_successfully":"Sign in successfully"
+    "sign_in_successfully":"Sign in successfully",
+    "terms_and_condiotions": "Please Accept our Terms and conditions",
+    "internet_con": "make sure you are connected to the internet",
+    "user_not_found": "user not found",
+    "email_or_password": "email or password is incorrect" 
 
 }

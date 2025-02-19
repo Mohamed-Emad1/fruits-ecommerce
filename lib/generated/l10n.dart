@@ -339,6 +339,46 @@ class S {
       args: [],
     );
   }
+
+  /// `Please Accept our Terms and conditions`
+  String get terms_and_condiotions {
+    return Intl.message(
+      'Please Accept our Terms and conditions',
+      name: 'terms_and_condiotions',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `make sure you are connected to the internet`
+  String get internet_con {
+    return Intl.message(
+      'make sure you are connected to the internet',
+      name: 'internet_con',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `user not found`
+  String get user_not_found {
+    return Intl.message(
+      'user not found',
+      name: 'user_not_found',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `email or password is incorrect`
+  String get email_or_password {
+    return Intl.message(
+      'email or password is incorrect',
+      name: 'email_or_password',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {
