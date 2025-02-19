@@ -76,7 +76,7 @@ class _SignUpViewBodyState extends State<SignUpViewBody> {
                     } else {
                       buildErrorBar(
                           context, S.of(context).terms_and_condiotions);
-                    }a
+                    }
                   } else {
                     setState(() {
                       autovalidateMode = AutovalidateMode.always;

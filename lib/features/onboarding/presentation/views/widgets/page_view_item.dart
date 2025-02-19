@@ -3,7 +3,7 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:fruitshup/constants.dart';
 import 'package:fruitshup/core/services/shared_prefrences_singletone.dart';
 import 'package:fruitshup/core/utils/app_text_styles.dart';
-import 'package:fruitshup/features/auth/presentation/views/login_view.dart';
+import 'package:fruitshup/features/auth/presentation/views/signin_view.dart';
 
 import '../../../../../generated/l10n.dart';
 
@@ -46,7 +46,7 @@ class PageViewItem extends StatelessWidget {
                     child: GestureDetector(
                       onTap: () {
                         Navigator.of(context)
-                            .pushReplacementNamed(LoginView.routeName);
+                            .pushReplacementNamed(SigninView.routeName);
                         SharedPreferencesSingleton.setBool(
                             kisOnBoardingView, true);
                         // SharedPreferencesSingleton.setBool(isOnBoardingViewSeen, true);

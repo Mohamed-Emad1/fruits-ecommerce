@@ -5,7 +5,7 @@ import 'package:fruitshup/core/utils/app_images.dart';
 import 'package:fruitshup/features/onboarding/presentation/views/onboarding_view.dart';
 
 import '../../../../../core/services/shared_prefrences_singletone.dart';
-import '../../../../auth/presentation/views/login_view.dart';
+import '../../../../auth/presentation/views/signin_view.dart';
 
 class SplashViewBody extends StatefulWidget {
   const SplashViewBody({super.key});
@@ -48,9 +48,8 @@ class _SplashViewBodyState extends State<SplashViewBody> {
         SharedPreferencesSingleton.getBool(kisOnBoardingView);
     Future.delayed(const Duration(seconds: 3), () {
       if (isOnBoardingViewSeen) {
-        Navigator.pushReplacementNamed(context, LoginView.routeName);
-      }
-      else{
+        Navigator.pushReplacementNamed(context, SigninView.routeName);
+      } else {
         Navigator.pushReplacementNamed(context, OnboardingView.routeName);
       }
     });

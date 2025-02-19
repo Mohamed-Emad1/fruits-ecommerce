@@ -7,7 +7,7 @@ import 'package:fruitshup/features/onboarding/presentation/views/widgets/on_boar
 import '../../../../../constants.dart';
 import '../../../../../core/services/shared_prefrences_singletone.dart';
 import '../../../../../generated/l10n.dart';
-import '../../../../auth/presentation/views/login_view.dart';
+import '../../../../auth/presentation/views/signin_view.dart';
 
 class OnBoardingViewBody extends StatefulWidget {
   const OnBoardingViewBody({super.key});
@@ -68,7 +68,8 @@ class _OnBoardingViewBodyState extends State<OnBoardingViewBody> {
             child: CustomButton(
               text: S.of(context).start_now,
               onPressed: () {
-                Navigator.of(context).pushReplacementNamed(LoginView.routeName);
+                Navigator.of(context)
+                    .pushReplacementNamed(SigninView.routeName);
                 SharedPreferencesSingleton.setBool(kisOnBoardingView, true);
               },
             ),
