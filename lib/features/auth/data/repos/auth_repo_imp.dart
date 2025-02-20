@@ -38,4 +38,28 @@ class AuthRepoImp extends AuthRepo {
       return left(ServerFailure(e.toString()));
     }
   }
+
+  @override
+  Future<Either<Failure, UserEntity>> signInWithGoogle() async {
+    try {
+      var user = await firebaseAuthService.signInWithGoogle();
+      return right(UserModel.fromFirebaseUser(user));
+    } on CustomExceptions catch (e) {
+      log("Exception is created in AuthRepoImp sign in with google : ${e.toString()}");
+      return left(ServerFailure(e.toString()));
+    }
+  }
+
+  @override
+  Future<Either<Failure, UserEntity>> signInWithFacebook() async {
+    try {
+      var user = await firebaseAuthService.signInWithFacebook();
+
+      return Right(UserModel.fromFirebaseUser(user));
+    } on CustomExceptions catch (e) {
+      
+      log("Exception is created in AuthRepoImp sign in with facebook : ${e.toString()}");
+      return left(ServerFailure(e.toString()));
+    } 
+  }
 }

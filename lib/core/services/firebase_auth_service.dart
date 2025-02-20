@@ -1,8 +1,10 @@
 import 'dart:developer';
 
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:flutter_facebook_auth/flutter_facebook_auth.dart';
 import 'package:fruitshup/core/errors/custom_exceptions.dart';
 import 'package:fruitshup/generated/l10n.dart';
+import 'package:google_sign_in/google_sign_in.dart';
 
 class FirebaseAuthService {
   Future<User> createUserWithEmailAndPassword(
@@ -51,6 +53,8 @@ class FirebaseAuthService {
       } else if (e.code == S.current.email_or_password) {
         // log('The account already exists for that email.');
         throw CustomExceptions(message: S.current.email_already_in_use);
+      } else if (e.code == 'wrong-password') {
+        throw CustomExceptions(message: S.current.email_or_password);
       } else if (e.code == 'network-request-failed') {
         throw CustomExceptions(message: S.current.internet_con);
       } else {
@@ -64,4 +68,26 @@ class FirebaseAuthService {
       throw CustomExceptions(message: S.current.an_error_occurred);
     }
   }
+
+  Future<User> signInWithGoogle() async {
+    final GoogleSignInAccount? googleUser = await GoogleSignIn().signIn();
+
+    final GoogleSignInAuthentication? googleAuth =
+        await googleUser?.authentication;
+
+    final credential = GoogleAuthProvider.credential(
+      accessToken: googleAuth?.accessToken,
+      idToken: googleAuth?.idToken,
+    );
+    return (await FirebaseAuth.instance.signInWithCredential(credential)).user!;
+  }
+Future<User> signInWithFacebook() async {
+  final LoginResult loginResult = await FacebookAuth.instance.login();
+
+  final OAuthCredential facebookAuthCredential =
+      FacebookAuthProvider.credential(loginResult.accessToken!.tokenString);
+
+  return (await FirebaseAuth.instance.signInWithCredential(facebookAuthCredential)).user!;
 }
+}
+

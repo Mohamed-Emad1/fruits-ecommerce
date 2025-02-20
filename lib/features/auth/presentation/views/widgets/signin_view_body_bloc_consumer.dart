@@ -3,7 +3,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:fruitshup/core/helper_functions/build_error_bar.dart';
 import 'package:fruitshup/core/widgets/custom_progress_hus.dart';
 import 'package:fruitshup/features/auth/presentation/manager/signin_cubit/signin_cubit.dart';
-import 'package:fruitshup/features/auth/presentation/views/widgets/sign_view_body.dart';
+import 'package:fruitshup/features/auth/presentation/views/widgets/signin_view_body.dart';
 import 'package:fruitshup/generated/l10n.dart';
 
 class SigninViewBodyBlocConsumer extends StatelessWidget {
