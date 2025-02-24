@@ -12,6 +12,6 @@ void setupServiceLocator() {
   getIt.registerSingleton<DatabaseService>(FireStoreService());
   getIt.registerSingleton<AuthRepo>(AuthRepoImp(
     firebaseAuthService: getIt<FirebaseAuthService>(),
-    databaseService: getIt<FireStoreService>(),
+    databaseService: getIt<DatabaseService>(),
   ));
 }

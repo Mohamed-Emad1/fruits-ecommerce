@@ -48,20 +48,22 @@ class FirebaseAuthService {
 
       return credintial.user!;
     } on FirebaseAuthException catch (e) {
-      if (e.code == 'weak-password') {
-        //
-        throw CustomExceptions(message: S.current.weak_password);
-      } else if (e.code == 'user-not-found') {
-        throw CustomExceptions(message: S.current.email_or_password);
-      } else if (e.code == S.current.email_or_password) {
-        // log('The account already exists for that email.');
-        throw CustomExceptions(message: S.current.email_already_in_use);
-      } else if (e.code == 'wrong-password') {
+      if (e.code == 'user-not-found') {
+        throw CustomExceptions(message: "user not found");
+      }
+      else if (e.code == "invalid-credential") {
         throw CustomExceptions(message: S.current.email_or_password);
       } else if (e.code == 'network-request-failed') {
         throw CustomExceptions(message: S.current.internet_con);
+      } else if (e.code == 'too-many-requests') {
+        // throw CustomExceptions(message: S.current.too_many_requests);
+        throw CustomExceptions(message: "test");
+
+      } else if (e.code == 'invalid-email') {
+        // throw CustomExceptions(message: S.current.invalid_email);
+        throw CustomExceptions(message: "test");
       } else {
-        throw CustomExceptions(message: S.current.an_error_occurred);
+        throw CustomExceptions(message: "Authentication error: ${e.code}");
       }
     } catch (e) {
       log("Exception in firebase authService log in in createUserWithEmailAndPassword: ${e.toString()}");
