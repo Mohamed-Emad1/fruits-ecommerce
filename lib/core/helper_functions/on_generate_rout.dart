@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:fruitshup/features/home/presentation/views/home_view.dart';
 import 'package:fruitshup/features/onboarding/presentation/views/onboarding_view.dart';
 import 'package:fruitshup/features/splash/presentation/views/splash_view.dart';
 
@@ -18,6 +19,9 @@ Route<dynamic> onGenerateRoute(RouteSettings settings) {
 
     case SigninView.routeName:
       return MaterialPageRoute(builder: (_) => const SigninView());
+
+      case HomeView.routeName:
+      return MaterialPageRoute(builder: (_) => const HomeView());
     default:
       return MaterialPageRoute(builder: (_) => const Scaffold());
   }
