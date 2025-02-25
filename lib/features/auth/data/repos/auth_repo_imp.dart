@@ -49,11 +49,16 @@ class AuthRepoImp extends AuthRepo {
   @override
   Future<Either<Failure, UserEntity>> signInWithEmailAndPassword(
       String email, String password) async {
+    var userEntity;
     try {
       var user = await firebaseAuthService.signInWithEmailAndPassord(
           email: email, password: password);
+      // var isUserExist = await databaseService.isUserExist(
+      //     path: BackendEndpoints.isUserExist, documentId: user.uid);
 
-      var userEntity = await getUserData(userId: password);
+      // if (isUserExist) {
+        userEntity = await getUserData(userId: user.uid);
+      // }
 
       return right(userEntity);
     } on CustomExceptions catch (e) {
@@ -72,8 +77,7 @@ class AuthRepoImp extends AuthRepo {
           path: BackendEndpoints.isUserExist, documentId: user.uid);
       if (isUserExist) {
         await getUserData(userId: user.uid);
-      }
-      else{
+      } else {
         await addUserData(user: userEntity);
       }
 
@@ -91,7 +95,13 @@ class AuthRepoImp extends AuthRepo {
     try {
       user = await firebaseAuthService.signInWithFacebook();
       var userEntity = UserModel.fromFirebaseUser(user);
-      await addUserData(user: userEntity);
+      var isUserExist = await databaseService.isUserExist(
+          path: BackendEndpoints.isUserExist, documentId: user.uid);
+      if (isUserExist) {
+        await getUserData(userId: user.uid);
+      } else {
+        await addUserData(user: userEntity);
+      }
       return Right(userEntity);
     } on CustomExceptions catch (e) {
       deleteUser(user);
