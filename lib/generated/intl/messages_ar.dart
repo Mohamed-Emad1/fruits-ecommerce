@@ -49,6 +49,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "internet_con": MessageLookupByLibrary.simpleMessage(
             "الرجاء التأكد من اتصالك بالانترنت"),
         "login": MessageLookupByLibrary.simpleMessage("تسجيل الدخول"),
+        "morning": MessageLookupByLibrary.simpleMessage("صباح الخير"),
         "new_account": MessageLookupByLibrary.simpleMessage("حساب جديد"),
         "offer": MessageLookupByLibrary.simpleMessage(
             "نقدم لك أفضل الفواكه المختارة بعناية. اطلع على التفاصيل والصور والتقييمات لتتأكد من اختيار الفاكهة المثالية."),

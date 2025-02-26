@@ -55,6 +55,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "internet_con": MessageLookupByLibrary.simpleMessage(
             "make sure you are connected to the internet"),
         "login": MessageLookupByLibrary.simpleMessage("login"),
+        "morning": MessageLookupByLibrary.simpleMessage("Good Morning"),
         "new_account": MessageLookupByLibrary.simpleMessage("new account"),
         "offer": MessageLookupByLibrary.simpleMessage(
             "We offer you the finest carefully selected fruits. Browse details, images, and reviews to ensure you choose the perfect fruit."),

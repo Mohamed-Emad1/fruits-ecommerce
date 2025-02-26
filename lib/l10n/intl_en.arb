@@ -32,6 +32,7 @@
     "terms_and_condiotions": "Please Accept our Terms and conditions",
     "internet_con": "make sure you are connected to the internet",
     "user_not_found": "user not found",
-    "email_or_password": "email or password is incorrect" 
+    "email_or_password": "email or password is incorrect",
+    "morning": "Good Morning"
 
 }
