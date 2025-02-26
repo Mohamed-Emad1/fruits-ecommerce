@@ -4,6 +4,7 @@ import 'package:fruitshup/constants.dart';
 import 'package:fruitshup/core/utils/app_images.dart';
 import 'package:fruitshup/core/widgets/search_text_field.dart';
 import 'package:fruitshup/features/home/presentation/views/widgets/custom_home_appbar.dart';
+import 'package:fruitshup/features/home/presentation/views/widgets/featured_item.dart';
 import 'package:fruitshup/generated/l10n.dart';
 
 class HomeViewBody extends StatelessWidget {
@@ -27,6 +28,10 @@ class HomeViewBody extends StatelessWidget {
                   ),
                   prefixIcon: SvgPicture.asset(Assets.imagesSearchIcon),
                 ),
+                const SizedBox(
+                  height: 12,
+                ),
+                const FeaturedItem(),
               ],
             ),
           ),

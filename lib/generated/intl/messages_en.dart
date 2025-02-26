@@ -37,6 +37,7 @@ class MessageLookup extends MessageLookupByLibrary {
             "Explore our wide collection of premium fresh fruits and get the best deals with high quality."),
         "donot_have_an_account":
             MessageLookupByLibrary.simpleMessage("Don\'t have an account?"),
+        "eid_offer": MessageLookupByLibrary.simpleMessage("Eid Offer"),
         "email": MessageLookupByLibrary.simpleMessage("email"),
         "email_already_in_use":
             MessageLookupByLibrary.simpleMessage("Email already in use"),
@@ -59,9 +60,11 @@ class MessageLookup extends MessageLookupByLibrary {
         "new_account": MessageLookupByLibrary.simpleMessage("new account"),
         "offer": MessageLookupByLibrary.simpleMessage(
             "We offer you the finest carefully selected fruits. Browse details, images, and reviews to ensure you choose the perfect fruit."),
+        "offer_25": MessageLookupByLibrary.simpleMessage("25% Off"),
         "or": MessageLookupByLibrary.simpleMessage("or"),
         "password": MessageLookupByLibrary.simpleMessage("password"),
         "search": MessageLookupByLibrary.simpleMessage("Search for"),
+        "shop_now": MessageLookupByLibrary.simpleMessage("Shop now"),
         "sign_in": MessageLookupByLibrary.simpleMessage("sign in"),
         "sign_in_successfully":
             MessageLookupByLibrary.simpleMessage("Sign in successfully"),

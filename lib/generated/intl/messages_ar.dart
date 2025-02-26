@@ -35,6 +35,7 @@ class MessageLookup extends MessageLookupByLibrary {
             "استكشف مجموعتنا الواسعة من الفواكه الطازجة الممتازة واحصل على أفضل العروض والجودة العالية."),
         "donot_have_an_account":
             MessageLookupByLibrary.simpleMessage("ليس لديك حساب؟"),
+        "eid_offer": MessageLookupByLibrary.simpleMessage("عروض العيد"),
         "email": MessageLookupByLibrary.simpleMessage("البريد الالكتروني"),
         "email_already_in_use": MessageLookupByLibrary.simpleMessage(
             "البريد الالكتروني مستخدم بالفعل"),
@@ -53,9 +54,11 @@ class MessageLookup extends MessageLookupByLibrary {
         "new_account": MessageLookupByLibrary.simpleMessage("حساب جديد"),
         "offer": MessageLookupByLibrary.simpleMessage(
             "نقدم لك أفضل الفواكه المختارة بعناية. اطلع على التفاصيل والصور والتقييمات لتتأكد من اختيار الفاكهة المثالية."),
+        "offer_25": MessageLookupByLibrary.simpleMessage("خصم 25%"),
         "or": MessageLookupByLibrary.simpleMessage("او"),
         "password": MessageLookupByLibrary.simpleMessage("كلمة المرور"),
         "search": MessageLookupByLibrary.simpleMessage("ابحث عن..."),
+        "shop_now": MessageLookupByLibrary.simpleMessage("تسوق الآن"),
         "sign_in": MessageLookupByLibrary.simpleMessage("تسجيل الدخول"),
         "sign_in_successfully":
             MessageLookupByLibrary.simpleMessage("تم تسجيل الدخول بنجاح"),

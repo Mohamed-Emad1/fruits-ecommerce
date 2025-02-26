@@ -34,6 +34,9 @@
     "user_not_found": "user not found",
     "email_or_password": "email or password is incorrect",
     "morning": "Good Morning",
-    "search": "Search for"
+    "search": "Search for",
+    "eid_offer": "Eid Offer",
+    "offer_25":"25% Off",
+    "shop_now": "Shop now"
 
 }
