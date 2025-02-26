@@ -73,5 +73,17 @@ class Assets {
   /// Assets for imagesSplashCircles
   /// assets/images/splash_circles.svg
   static const String imagesSplashCircles = "assets/images/splash_circles.svg";
+
+  /// Assets for imagesTest1
+  /// assets/images/test1.svg
+  static const String imagesTest1 = "assets/images/test1.svg";
+
+  /// Assets for imagesTest2
+  /// assets/images/test2.svg
+  static const String imagesTest2 = "assets/images/test2.svg";
+
+  /// Assets for imagesWatermelon
+  /// assets/images/watermelon.png
+  static const String imagesWatermelon = "assets/images/watermelon.png";
 }
 
