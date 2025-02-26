@@ -25,6 +25,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "an_error_occurred":
             MessageLookupByLibrary.simpleMessage("An error occurred"),
         "apple": MessageLookupByLibrary.simpleMessage("sign in with apple"),
+        "best_selling": MessageLookupByLibrary.simpleMessage("Best Selling"),
         "call_to_action":
             MessageLookupByLibrary.simpleMessage("Search and Shop."),
         "conditions":
@@ -56,6 +57,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "internet_con": MessageLookupByLibrary.simpleMessage(
             "make sure you are connected to the internet"),
         "login": MessageLookupByLibrary.simpleMessage("login"),
+        "more": MessageLookupByLibrary.simpleMessage("More"),
         "morning": MessageLookupByLibrary.simpleMessage("Good Morning"),
         "new_account": MessageLookupByLibrary.simpleMessage("new account"),
         "offer": MessageLookupByLibrary.simpleMessage(

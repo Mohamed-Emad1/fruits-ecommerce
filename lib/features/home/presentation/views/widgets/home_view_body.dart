@@ -3,8 +3,9 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:fruitshup/constants.dart';
 import 'package:fruitshup/core/utils/app_images.dart';
 import 'package:fruitshup/core/widgets/search_text_field.dart';
+import 'package:fruitshup/features/home/presentation/views/widgets/best_selling_header.dart';
 import 'package:fruitshup/features/home/presentation/views/widgets/custom_home_appbar.dart';
-import 'package:fruitshup/features/home/presentation/views/widgets/featured_item.dart';
+import 'package:fruitshup/features/home/presentation/views/widgets/featured_item_list.dart';
 import 'package:fruitshup/generated/l10n.dart';
 
 class HomeViewBody extends StatelessWidget {
@@ -31,7 +32,14 @@ class HomeViewBody extends StatelessWidget {
                 const SizedBox(
                   height: 12,
                 ),
-                const FeaturedItem(),
+                const FeaturedItemList(),
+                const SizedBox(
+                  height: 12,
+                ),
+                const BestSellingHeader(),
+                const SizedBox(
+                  height: 8,
+                ),
               ],
             ),
           ),

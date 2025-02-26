@@ -24,6 +24,7 @@ class MessageLookup extends MessageLookupByLibrary {
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
         "an_error_occurred": MessageLookupByLibrary.simpleMessage("حدث خطأ"),
         "apple": MessageLookupByLibrary.simpleMessage("تسجيل بواسطة أبل"),
+        "best_selling": MessageLookupByLibrary.simpleMessage("الاكثر مبيعا"),
         "call_to_action": MessageLookupByLibrary.simpleMessage("ابحث وتسوق."),
         "conditions":
             MessageLookupByLibrary.simpleMessage(" الشروط والأحكام الخاصة بنا"),
@@ -50,6 +51,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "internet_con": MessageLookupByLibrary.simpleMessage(
             "الرجاء التأكد من اتصالك بالانترنت"),
         "login": MessageLookupByLibrary.simpleMessage("تسجيل الدخول"),
+        "more": MessageLookupByLibrary.simpleMessage("المزيد"),
         "morning": MessageLookupByLibrary.simpleMessage("صباح الخير"),
         "new_account": MessageLookupByLibrary.simpleMessage("حساب جديد"),
         "offer": MessageLookupByLibrary.simpleMessage(
