@@ -61,6 +61,7 @@ class MessageLookup extends MessageLookupByLibrary {
             "We offer you the finest carefully selected fruits. Browse details, images, and reviews to ensure you choose the perfect fruit."),
         "or": MessageLookupByLibrary.simpleMessage("or"),
         "password": MessageLookupByLibrary.simpleMessage("password"),
+        "search": MessageLookupByLibrary.simpleMessage("Search for"),
         "sign_in": MessageLookupByLibrary.simpleMessage("sign in"),
         "sign_in_successfully":
             MessageLookupByLibrary.simpleMessage("Sign in successfully"),

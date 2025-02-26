@@ -54,6 +54,14 @@ class Assets {
   /// assets/images/profile_image.png
   static const String imagesProfileImage = "assets/images/profile_image.png";
 
+  /// Assets for imagesSearchIcon
+  /// assets/images/search_icon.svg
+  static const String imagesSearchIcon = "assets/images/search_icon.svg";
+
+  /// Assets for imagesSearchTextFieldIcon
+  /// assets/images/search_text_field_icon.svg
+  static const String imagesSearchTextFieldIcon = "assets/images/search_text_field_icon.svg";
+
   /// Assets for imagesSplashCircles
   /// assets/images/splash_circles.svg
   static const String imagesSplashCircles = "assets/images/splash_circles.svg";
