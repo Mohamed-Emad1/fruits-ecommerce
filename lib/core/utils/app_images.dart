@@ -30,6 +30,14 @@ class Assets {
   /// assets/images/google_icon.svg
   static const String imagesGoogleIcon = "assets/images/google_icon.svg";
 
+  /// Assets for imagesHome
+  /// assets/images/home.svg
+  static const String imagesHome = "assets/images/home.svg";
+
+  /// Assets for imagesHomeActive
+  /// assets/images/home_active.svg
+  static const String imagesHomeActive = "assets/images/home_active.svg";
+
   /// Assets for imagesLogo
   /// assets/images/logo.svg
   static const String imagesLogo = "assets/images/logo.svg";
@@ -70,6 +78,14 @@ class Assets {
   /// assets/images/search_text_field_icon.svg
   static const String imagesSearchTextFieldIcon = "assets/images/search_text_field_icon.svg";
 
+  /// Assets for imagesShoppingCart
+  /// assets/images/shopping_cart.svg
+  static const String imagesShoppingCart = "assets/images/shopping_cart.svg";
+
+  /// Assets for imagesShoppingCartActive
+  /// assets/images/shopping_cart_active.svg
+  static const String imagesShoppingCartActive = "assets/images/shopping_cart_active.svg";
+
   /// Assets for imagesSplashCircles
   /// assets/images/splash_circles.svg
   static const String imagesSplashCircles = "assets/images/splash_circles.svg";
@@ -82,8 +98,24 @@ class Assets {
   /// assets/images/test2.svg
   static const String imagesTest2 = "assets/images/test2.svg";
 
+  /// Assets for imagesUser
+  /// assets/images/user.svg
+  static const String imagesUser = "assets/images/user.svg";
+
+  /// Assets for imagesUserActive
+  /// assets/images/user_active.svg
+  static const String imagesUserActive = "assets/images/user_active.svg";
+
   /// Assets for imagesWatermelon
   /// assets/images/watermelon.png
   static const String imagesWatermelon = "assets/images/watermelon.png";
+
+  /// Assets for imagesWindow
+  /// assets/images/window.svg
+  static const String imagesWindow = "assets/images/window.svg";
+
+  /// Assets for imagesWindowActive
+  /// assets/images/window_active.svg
+  static const String imagesWindowActive = "assets/images/window_active.svg";
 }
 

@@ -54,19 +54,23 @@ class MessageLookup extends MessageLookupByLibrary {
         "google": MessageLookupByLibrary.simpleMessage("sign in with google"),
         "have_account":
             MessageLookupByLibrary.simpleMessage("have an account?"),
+        "home": MessageLookupByLibrary.simpleMessage("Home"),
         "internet_con": MessageLookupByLibrary.simpleMessage(
             "make sure you are connected to the internet"),
         "login": MessageLookupByLibrary.simpleMessage("login"),
         "more": MessageLookupByLibrary.simpleMessage("More"),
         "morning": MessageLookupByLibrary.simpleMessage("Good Morning"),
+        "my_account": MessageLookupByLibrary.simpleMessage("My Account"),
         "new_account": MessageLookupByLibrary.simpleMessage("new account"),
         "offer": MessageLookupByLibrary.simpleMessage(
             "We offer you the finest carefully selected fruits. Browse details, images, and reviews to ensure you choose the perfect fruit."),
         "offer_25": MessageLookupByLibrary.simpleMessage("25% Off"),
         "or": MessageLookupByLibrary.simpleMessage("or"),
         "password": MessageLookupByLibrary.simpleMessage("password"),
+        "products": MessageLookupByLibrary.simpleMessage("Products"),
         "search": MessageLookupByLibrary.simpleMessage("Search for"),
         "shop_now": MessageLookupByLibrary.simpleMessage("Shop now"),
+        "shopping_cart": MessageLookupByLibrary.simpleMessage("Shopping Cart"),
         "sign_in": MessageLookupByLibrary.simpleMessage("sign in"),
         "sign_in_successfully":
             MessageLookupByLibrary.simpleMessage("Sign in successfully"),

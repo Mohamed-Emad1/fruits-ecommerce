@@ -449,6 +449,46 @@ class S {
       args: [],
     );
   }
+
+  /// `Home`
+  String get home {
+    return Intl.message(
+      'Home',
+      name: 'home',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Products`
+  String get products {
+    return Intl.message(
+      'Products',
+      name: 'products',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Shopping Cart`
+  String get shopping_cart {
+    return Intl.message(
+      'Shopping Cart',
+      name: 'shopping_cart',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `My Account`
+  String get my_account {
+    return Intl.message(
+      'My Account',
+      name: 'my_account',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

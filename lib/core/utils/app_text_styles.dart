@@ -46,7 +46,7 @@ class AppTextStyles {
     color: Color(0xFF0C0D0D),
   );
 
-    static const regular16 = TextStyle(
+  static const regular16 = TextStyle(
     fontSize: 16,
     fontWeight: FontWeight.w400,
     fontFamily: fontFamily,
@@ -69,7 +69,14 @@ class AppTextStyles {
 
   static const semiBold13 = TextStyle(
     fontSize: 13,
-    fontWeight: FontWeight.w700,
+    fontWeight: FontWeight.w600,
+    fontFamily: fontFamily,
+    color: Color(0xFF0C0D0D),
+  );
+
+  static const semiBold11 = TextStyle(
+    fontSize: 11,
+    fontWeight: FontWeight.w600,
     fontFamily: fontFamily,
     color: Color(0xFF0C0D0D),
   );

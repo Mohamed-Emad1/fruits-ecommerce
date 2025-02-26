@@ -48,19 +48,23 @@ class MessageLookup extends MessageLookupByLibrary {
         "full_name": MessageLookupByLibrary.simpleMessage("الاسم بالكامل"),
         "google": MessageLookupByLibrary.simpleMessage("تسجيل بواسطة جوجل"),
         "have_account": MessageLookupByLibrary.simpleMessage("لديك حساب؟"),
+        "home": MessageLookupByLibrary.simpleMessage("الرئيسية"),
         "internet_con": MessageLookupByLibrary.simpleMessage(
             "الرجاء التأكد من اتصالك بالانترنت"),
         "login": MessageLookupByLibrary.simpleMessage("تسجيل الدخول"),
         "more": MessageLookupByLibrary.simpleMessage("المزيد"),
         "morning": MessageLookupByLibrary.simpleMessage("صباح الخير"),
+        "my_account": MessageLookupByLibrary.simpleMessage("حسابي"),
         "new_account": MessageLookupByLibrary.simpleMessage("حساب جديد"),
         "offer": MessageLookupByLibrary.simpleMessage(
             "نقدم لك أفضل الفواكه المختارة بعناية. اطلع على التفاصيل والصور والتقييمات لتتأكد من اختيار الفاكهة المثالية."),
         "offer_25": MessageLookupByLibrary.simpleMessage("خصم 25%"),
         "or": MessageLookupByLibrary.simpleMessage("او"),
         "password": MessageLookupByLibrary.simpleMessage("كلمة المرور"),
+        "products": MessageLookupByLibrary.simpleMessage("المنتجات"),
         "search": MessageLookupByLibrary.simpleMessage("ابحث عن..."),
         "shop_now": MessageLookupByLibrary.simpleMessage("تسوق الآن"),
+        "shopping_cart": MessageLookupByLibrary.simpleMessage("عربة التسوق"),
         "sign_in": MessageLookupByLibrary.simpleMessage("تسجيل الدخول"),
         "sign_in_successfully":
             MessageLookupByLibrary.simpleMessage("تم تسجيل الدخول بنجاح"),
