@@ -9,8 +9,6 @@ class FruitItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: 200,
-      height: 250,
       decoration: ShapeDecoration(
         color: const Color(0xFFF3F5F7),
         shape: RoundedRectangleBorder(
@@ -34,7 +32,7 @@ class FruitItem extends StatelessWidget {
             child: Column(
               children: [
                 const SizedBox(
-                  height: 32,
+                  height: 24,
                 ),
                 Image.asset(Assets.imagesWatermelon),
                 const SizedBox(
