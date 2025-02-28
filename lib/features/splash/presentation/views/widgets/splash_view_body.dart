@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:fruitshup/constants.dart';
+import 'package:fruitshup/core/services/firebase_auth_service.dart';
+import 'package:fruitshup/core/services/service.dart';
 import 'package:fruitshup/core/utils/app_images.dart';
+import 'package:fruitshup/features/home/presentation/views/home_view.dart';
 import 'package:fruitshup/features/onboarding/presentation/views/onboarding_view.dart';
 
 import '../../../../../core/services/shared_prefrences_singletone.dart';
@@ -48,7 +51,12 @@ class _SplashViewBodyState extends State<SplashViewBody> {
         SharedPreferencesSingleton.getBool(kisOnBoardingView);
     Future.delayed(const Duration(seconds: 3), () {
       if (isOnBoardingViewSeen) {
-        Navigator.pushReplacementNamed(context, SigninView.routeName);
+        if (getIt.get<FirebaseAuthService>().isLoggedIn()) {
+          Navigator.pushReplacementNamed(context, HomeView.routeName);
+        }
+        else{
+           Navigator.pushReplacementNamed(context, SigninView.routeName);
+        }
       } else {
         Navigator.pushReplacementNamed(context, OnboardingView.routeName);
       }
