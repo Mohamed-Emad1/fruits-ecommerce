@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:fruitshup/core/helper_functions/get_user.dart';
 import 'package:fruitshup/core/utils/app_images.dart';
 import 'package:fruitshup/core/utils/app_text_styles.dart';
 import 'package:fruitshup/core/widgets/custom_notification_widget.dart';
@@ -16,8 +17,8 @@ class CustomHomeAppbar extends StatelessWidget {
           color: const Color(0xff949D9E),
         ),
       ),
-      subtitle: const Text(
-        "Mostafa",
+      subtitle: Text(
+        getUser().name,
         style: AppTextStyles.bold16,
       ),
       leading: Image.asset(Assets.imagesProfileImage),

@@ -1,11 +1,14 @@
+import 'dart:convert';
 import 'dart:developer';
 
 import 'package:dartz/dartz.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:fruitshup/constants.dart';
 import 'package:fruitshup/core/errors/custom_exceptions.dart';
 import 'package:fruitshup/core/errors/failure.dart';
 import 'package:fruitshup/core/services/database_service.dart';
 import 'package:fruitshup/core/services/firebase_auth_service.dart';
+import 'package:fruitshup/core/services/shared_prefrences_singletone.dart';
 import 'package:fruitshup/core/utils/backend_endpoints.dart';
 import 'package:fruitshup/features/auth/data/models/user_model.dart';
 import 'package:fruitshup/features/auth/domain/entities/user_entity.dart';
@@ -49,7 +52,7 @@ class AuthRepoImp extends AuthRepo {
   @override
   Future<Either<Failure, UserEntity>> signInWithEmailAndPassword(
       String email, String password) async {
-    var userEntity;
+    UserEntity userEntity;
     try {
       var user = await firebaseAuthService.signInWithEmailAndPassord(
           email: email, password: password);
@@ -57,7 +60,8 @@ class AuthRepoImp extends AuthRepo {
       //     path: BackendEndpoints.isUserExist, documentId: user.uid);
 
       // if (isUserExist) {
-        userEntity = await getUserData(userId: user.uid);
+      userEntity = await getUserData(userId: user.uid);
+      saveUserData(user: userEntity);
       // }
 
       return right(userEntity);
@@ -115,7 +119,7 @@ class AuthRepoImp extends AuthRepo {
     await databaseService.addData(
         documentId: user.userId,
         path: BackendEndpoints.addUserData,
-        data: user.toMap());
+        data: UserModel.fromEntity(user).toMap());
   }
 
   @override
@@ -124,5 +128,11 @@ class AuthRepoImp extends AuthRepo {
         path: BackendEndpoints.getUserData, documentId: userId);
 
     return UserModel.fromJson(userData);
+  }
+
+  @override
+  Future saveUserData({required UserEntity user}) async {
+    final jsonData = jsonEncode(UserModel.fromEntity(user).toMap());
+    await SharedPreferencesSingleton.setstring(kUserData, jsonData);
   }
 }
