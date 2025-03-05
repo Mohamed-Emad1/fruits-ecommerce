@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:fruitshup/core/services/service.dart';
+import 'package:fruitshup/core/services/service_locator.dart';
 import 'package:fruitshup/features/auth/domain/repos/auth_repo.dart';
 import 'package:fruitshup/features/auth/presentation/manager/signin_cubit/signin_cubit.dart';
 import 'package:fruitshup/features/auth/presentation/views/widgets/signin_view_body_bloc_consumer.dart';

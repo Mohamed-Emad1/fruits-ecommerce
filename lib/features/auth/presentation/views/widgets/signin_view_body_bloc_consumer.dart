@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:fruitshup/core/helper_functions/build_error_bar.dart';
 import 'package:fruitshup/core/helper_functions/build_success_snackbar.dart';
-import 'package:fruitshup/core/widgets/custom_progress_hus.dart';
+import 'package:fruitshup/core/widgets/custom_progress_hud.dart';
 import 'package:fruitshup/features/auth/presentation/manager/signin_cubit/signin_cubit.dart';
 import 'package:fruitshup/features/auth/presentation/views/widgets/signin_view_body.dart';
 import 'package:fruitshup/features/home/presentation/views/home_view.dart';

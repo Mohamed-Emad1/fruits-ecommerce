@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:fruitshup/constants.dart';
 import 'package:fruitshup/core/services/firebase_auth_service.dart';
-import 'package:fruitshup/core/services/service.dart';
+import 'package:fruitshup/core/services/service_locator.dart';
 import 'package:fruitshup/core/utils/app_images.dart';
 import 'package:fruitshup/features/home/presentation/views/home_view.dart';
 import 'package:fruitshup/features/onboarding/presentation/views/onboarding_view.dart';
