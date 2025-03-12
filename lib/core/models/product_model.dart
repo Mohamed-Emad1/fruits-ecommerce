@@ -1,6 +1,5 @@
-import 'dart:io';
-
 import 'package:fruitshup/core/entities/product_entity.dart';
+import 'package:fruitshup/core/helper_functions/get_average_rating.dart';
 import 'package:fruitshup/core/models/review_model.dart';
 
 class ProductModel {
@@ -8,18 +7,19 @@ class ProductModel {
   final num price;
   final String code;
   final String description;
-  final File image;
   final bool isFeatured;
   String? imageUrl;
   final int expirationMonths;
   final bool isOrganic;
   final int numOfCallories;
+  final num averageRating;
   final int unitAmount;
   final List<ReviewModel> reviews;
   final int sellingCount;
 
   ProductModel(
       {required this.name,
+      required this.averageRating,
       required this.sellingCount,
       required this.price,
       required this.code,
@@ -28,31 +28,13 @@ class ProductModel {
       required this.numOfCallories,
       required this.unitAmount,
       required this.description,
-      required this.image,
       required this.isFeatured,
       required this.reviews,
       this.imageUrl});
 
-  // factory ProductModel.fromEntity(ProductEntity entity) {
-  //   return ProductModel(
-  //       name: entity.name,
-  //       price: entity.price,
-  //       code: entity.code,
-  //       description: entity.description,
-  //       image: entity.image,
-  //       isFeatured: entity.isFeatured,
-  //       imageUrl: entity.imageUrl,
-  //       expirationMonths: entity.expirationMonths,
-  //       isOrganic: entity.isOrganic,
-  //       numOfCallories: entity.numOfCallories,
-  //       unitAmount: entity.unitAmount,
-  //       reviews: entity.reviews
-  //           .map((element) => ReviewModel.fromEntity(element))
-  //           .toList());
-  // }
-
   factory ProductModel.fromJson(Map<String, dynamic> json) {
     return ProductModel(
+      averageRating: getAverageRating(json["reviews"]),
       sellingCount: json["sellingCount"],
       name: json["name"],
       price: json["price"],
@@ -63,7 +45,6 @@ class ProductModel {
       expirationMonths: json["expirationMonths"],
       isOrganic: json["isOrganic"],
       numOfCallories: json["numOfCallories"],
-      image: File(json["image"]),
       unitAmount: json["unitAmount"],
       reviews: json["reviews"] != null
           ? List<ReviewModel>.from(
@@ -78,7 +59,6 @@ class ProductModel {
         price: price,
         code: code,
         description: description,
-        image: image,
         isFeatured: isFeatured,
         imageUrl: imageUrl,
         expirationMonths: expirationMonths,
@@ -104,3 +84,5 @@ class ProductModel {
     };
   }
 }
+
+

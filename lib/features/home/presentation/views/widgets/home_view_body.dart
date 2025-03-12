@@ -5,11 +5,10 @@ import 'package:fruitshup/constants.dart';
 import 'package:fruitshup/core/cubits/product_cubit/product_cubit.dart';
 import 'package:fruitshup/core/utils/app_images.dart';
 import 'package:fruitshup/core/widgets/search_text_field.dart';
-import 'package:fruitshup/features/home/presentation/views/widgets/best_selling_grid_view.dart';
+import 'package:fruitshup/features/home/presentation/views/widgets/best_selling_grid_view_bloc_consumer.dart';
 import 'package:fruitshup/features/home/presentation/views/widgets/best_selling_header.dart';
 import 'package:fruitshup/features/home/presentation/views/widgets/custom_home_appbar.dart';
 import 'package:fruitshup/features/home/presentation/views/widgets/featured_item_list.dart';
-import 'package:fruitshup/features/home/presentation/views/widgets/home_view.dart';
 import 'package:fruitshup/generated/l10n.dart';
 
 class HomeViewBody extends StatefulWidget {
@@ -60,7 +59,7 @@ class _HomeViewBodyState extends State<HomeViewBody> {
               ],
             ),
           ),
-          const BestSellingGridView(),
+          const BestSellingGridViewBolcConsumer(),
         ],
       ),
     );

@@ -1,4 +1,3 @@
-import 'dart:io';
 import 'package:fruitshup/core/entities/review_entity.dart';
 
 class ProductEntity {
@@ -6,7 +5,6 @@ class ProductEntity {
   final num price;
   final String code;
   final String description;
-  final File image;
   final bool isFeatured;
   String? imageUrl;
   final int expirationMonths;
@@ -27,7 +25,6 @@ class ProductEntity {
       required this.numOfCallories,
       required this.unitAmount,
       required this.description,
-      required this.image,
       required this.isFeatured,
       this.imageUrl});
 }
