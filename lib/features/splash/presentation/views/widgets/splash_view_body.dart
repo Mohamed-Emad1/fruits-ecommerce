@@ -4,7 +4,7 @@ import 'package:fruitshup/constants.dart';
 import 'package:fruitshup/core/services/firebase_auth_service.dart';
 import 'package:fruitshup/core/services/service_locator.dart';
 import 'package:fruitshup/core/utils/app_images.dart';
-import 'package:fruitshup/features/home/presentation/views/home_view.dart';
+import 'package:fruitshup/features/home/presentation/views/main_view.dart';
 import 'package:fruitshup/features/onboarding/presentation/views/onboarding_view.dart';
 
 import '../../../../../core/services/shared_prefrences_singletone.dart';
@@ -52,7 +52,7 @@ class _SplashViewBodyState extends State<SplashViewBody> {
     Future.delayed(const Duration(seconds: 3), () {
       if (isOnBoardingViewSeen) {
         if (getIt.get<FirebaseAuthService>().isLoggedIn()) {
-          Navigator.pushReplacementNamed(context, HomeView.routeName);
+          Navigator.pushReplacementNamed(context, MainView.routeName);
         } else {
           Navigator.pushReplacementNamed(context, SigninView.routeName);
         }

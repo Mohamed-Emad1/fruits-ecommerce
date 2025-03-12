@@ -5,7 +5,7 @@ import 'package:fruitshup/core/helper_functions/build_success_snackbar.dart';
 import 'package:fruitshup/core/widgets/custom_progress_hud.dart';
 import 'package:fruitshup/features/auth/presentation/manager/signin_cubit/signin_cubit.dart';
 import 'package:fruitshup/features/auth/presentation/views/widgets/signin_view_body.dart';
-import 'package:fruitshup/features/home/presentation/views/home_view.dart';
+import 'package:fruitshup/features/home/presentation/views/main_view.dart';
 import 'package:fruitshup/generated/l10n.dart';
 
 class SigninViewBodyBlocConsumer extends StatelessWidget {
@@ -19,7 +19,7 @@ class SigninViewBodyBlocConsumer extends StatelessWidget {
       listener: (context, state) {
         if (state is SigninSuccess) {
           buildSucessSnackBar(context, S.current.sign_in_successfully);
-          Navigator.pushNamed(context, HomeView.routeName);
+          Navigator.pushNamed(context, MainView.routeName);
         }
         if (state is SigninError) {
           buildErrorBar(context, state.error);

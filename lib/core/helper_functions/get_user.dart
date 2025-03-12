@@ -7,6 +7,6 @@ import 'package:fruitshup/features/auth/domain/entities/user_entity.dart';
 
 UserEntity getUser() {
   var json = SharedPreferencesSingleton.getString(kUserData);
-  var UserEntity = UserModel.fromJson(jsonDecode(json));
-  return UserEntity;
+  var userEntity = UserModel.fromJson(jsonDecode(json));
+  return userEntity;
 }

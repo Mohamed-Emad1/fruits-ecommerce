@@ -84,7 +84,7 @@ class AuthRepoImp extends AuthRepo {
       } else {
         await addUserData(user: userEntity);
       }
-
+      saveUserData(user: userEntity);
       return right(userEntity);
     } on CustomExceptions catch (e) {
       deleteUser(user);
@@ -106,6 +106,7 @@ class AuthRepoImp extends AuthRepo {
       } else {
         await addUserData(user: userEntity);
       }
+      saveUserData(user: userEntity);
       return Right(userEntity);
     } on CustomExceptions catch (e) {
       deleteUser(user);
