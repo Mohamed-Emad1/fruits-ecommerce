@@ -68,6 +68,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "or": MessageLookupByLibrary.simpleMessage("or"),
         "password": MessageLookupByLibrary.simpleMessage("password"),
         "products": MessageLookupByLibrary.simpleMessage("Products"),
+        "results": MessageLookupByLibrary.simpleMessage("Results"),
         "search": MessageLookupByLibrary.simpleMessage("Search for"),
         "shop_now": MessageLookupByLibrary.simpleMessage("Shop now"),
         "shopping_cart": MessageLookupByLibrary.simpleMessage("Shopping Cart"),

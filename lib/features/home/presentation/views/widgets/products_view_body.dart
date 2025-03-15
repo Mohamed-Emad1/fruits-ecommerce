@@ -4,26 +4,23 @@ import 'package:flutter_svg/svg.dart';
 import 'package:fruitshup/constants.dart';
 import 'package:fruitshup/core/cubits/product_cubit/product_cubit.dart';
 import 'package:fruitshup/core/utils/app_images.dart';
+import 'package:fruitshup/core/widgets/custom_header.dart';
 import 'package:fruitshup/core/widgets/search_text_field.dart';
 import 'package:fruitshup/features/home/presentation/views/widgets/products_grid_view_bloc_consumer.dart';
-import 'package:fruitshup/features/home/presentation/views/widgets/best_selling_header.dart';
-import 'package:fruitshup/features/home/presentation/views/widgets/custom_home_appbar.dart';
-import 'package:fruitshup/features/home/presentation/views/widgets/featured_item_list.dart';
+import 'package:fruitshup/features/home/presentation/views/widgets/products_view_header.dart';
 import 'package:fruitshup/generated/l10n.dart';
 
-class HomeViewBody extends StatefulWidget {
-  const HomeViewBody({
-    super.key,
-  });
+class ProductsViewBody extends StatefulWidget {
+  const ProductsViewBody({super.key});
 
   @override
-  State<HomeViewBody> createState() => _HomeViewBodyState();
+  State<ProductsViewBody> createState() => _ProductsViewBodyState();
 }
 
-class _HomeViewBodyState extends State<HomeViewBody> {
+class _ProductsViewBodyState extends State<ProductsViewBody> {
   @override
   void initState() {
-    context.read<ProductCubit>().getBestSellingProducts();
+    context.read<ProductCubit>().getProducts();
     super.initState();
   }
 
@@ -36,7 +33,12 @@ class _HomeViewBodyState extends State<HomeViewBody> {
           SliverToBoxAdapter(
             child: Column(
               children: [
-                const CustomHomeAppbar(),
+                const SizedBox(
+                  height: 8,
+                ),
+                const CustomHeader(
+                  title: "Products",
+                ),
                 kSizedBox16,
                 SearchTextField(
                   hintText: S.of(context).search,
@@ -45,14 +47,17 @@ class _HomeViewBodyState extends State<HomeViewBody> {
                   ),
                   prefixIcon: SvgPicture.asset(Assets.imagesSearchIcon),
                 ),
+                const Divider(),
+                ProductsViewHeader(
+                  productsLength:
+                      BlocProvider.of<ProductCubit>(context).productsLength,
+                ),
                 const SizedBox(
                   height: 12,
                 ),
-                const FeaturedItemList(),
                 const SizedBox(
                   height: 12,
                 ),
-                const BestSellingHeader(),
                 const SizedBox(
                   height: 8,
                 ),

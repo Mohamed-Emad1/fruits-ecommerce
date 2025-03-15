@@ -6,9 +6,12 @@ class InActiveItem extends StatelessWidget {
   final String image;
   @override
   Widget build(BuildContext context) {
-    return SvgPicture.asset(
-      image,
-      // colorFilter: const ColorFilter.mode(Color(0xff4E5556), BlendMode.srcIn),
+    return Container(
+      color: Colors.transparent,
+      child: SvgPicture.asset(
+        image,
+        // colorFilter: const ColorFilter.mode(Color(0xff4E5556), BlendMode.srcIn),
+      ),
     );
   }
 }

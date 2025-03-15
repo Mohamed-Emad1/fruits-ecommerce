@@ -8,20 +8,24 @@ part 'product_state.dart';
 class ProductCubit extends Cubit<ProductState> {
   ProductCubit(this._productRepo) : super(ProductInitial());
   final ProductRepo _productRepo;
+  int productsLength = 0;
 
-
-  Future<void> getProducts() async{
+  Future<void> getProducts() async {
     emit(ProductLoading());
     final result = await _productRepo.getProducts();
-    result.fold(
-      (failure) => emit(ProductFailure(errMessgae: failure.message)),
-     (list) => emit(ProductSuccess(products: list)));
+    result.fold((failure) => emit(ProductFailure(errMessgae: failure.message)),
+        (list) => emit(ProductSuccess(products: list)));
   }
 
-    Future<void> getBestSellingProducts() async {
+  Future<void> getBestSellingProducts() async {
     emit(ProductLoading());
     final result = await _productRepo.getBestSellingProducts();
     result.fold((failure) => emit(ProductFailure(errMessgae: failure.message)),
-        (list) => emit(ProductSuccess(products: list)));
+        (list) {
+          productsLength = list.length;
+      emit(
+        ProductSuccess(products: list),
+      );
+    });
   }
 }

@@ -62,6 +62,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "or": MessageLookupByLibrary.simpleMessage("او"),
         "password": MessageLookupByLibrary.simpleMessage("كلمة المرور"),
         "products": MessageLookupByLibrary.simpleMessage("المنتجات"),
+        "results": MessageLookupByLibrary.simpleMessage("نتائج "),
         "search": MessageLookupByLibrary.simpleMessage("ابحث عن..."),
         "shop_now": MessageLookupByLibrary.simpleMessage("تسوق الآن"),
         "shopping_cart": MessageLookupByLibrary.simpleMessage("عربة التسوق"),

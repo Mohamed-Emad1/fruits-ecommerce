@@ -3,7 +3,8 @@ import 'package:fruitshup/features/home/domain/entities/bottom_navigationbar_ent
 import 'package:fruitshup/features/home/presentation/views/widgets/bottom_navbar_item.dart';
 
 class CustomBottomNavigationbar extends StatefulWidget {
-  const CustomBottomNavigationbar({super.key});
+  const CustomBottomNavigationbar({super.key, this.valueChanged});
+  final ValueChanged<int>? valueChanged;
 
   @override
   State<CustomBottomNavigationbar> createState() =>
@@ -45,6 +46,7 @@ class _CustomBottomNavigationbarState extends State<CustomBottomNavigationbar> {
               onTap: () {
                 setState(() {
                   selectedIndex = index;
+                  widget.valueChanged!(index);
                 });
               },
               child: NavigationBarItem(
