@@ -44,6 +44,12 @@
     "products":"Products",
     "shopping_cart":"Shopping Cart",
     "my_account":"My Account",
-    "results":"Results"
+    "results":"Results",
+    "you_have":"You have",
+    "items":"items in your cart",
+    "checkout":"Checkout",
+    "add_to_cart":"Add to cart",
+    "product_details":"Product Details"
+    
 
 }

@@ -26,6 +26,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "apple": MessageLookupByLibrary.simpleMessage("تسجيل بواسطة أبل"),
         "best_selling": MessageLookupByLibrary.simpleMessage("الاكثر مبيعا"),
         "call_to_action": MessageLookupByLibrary.simpleMessage("ابحث وتسوق."),
+        "checkout": MessageLookupByLibrary.simpleMessage("الدفع"),
         "conditions":
             MessageLookupByLibrary.simpleMessage(" الشروط والأحكام الخاصة بنا"),
         "create_account":
@@ -51,6 +52,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "home": MessageLookupByLibrary.simpleMessage("الرئيسية"),
         "internet_con": MessageLookupByLibrary.simpleMessage(
             "الرجاء التأكد من اتصالك بالانترنت"),
+        "items": MessageLookupByLibrary.simpleMessage("عناصر في عربة التسوق"),
         "login": MessageLookupByLibrary.simpleMessage("تسجيل الدخول"),
         "more": MessageLookupByLibrary.simpleMessage("المزيد"),
         "morning": MessageLookupByLibrary.simpleMessage("صباح الخير"),
@@ -81,6 +83,7 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("المستخدم غير موجود"),
         "weak_password":
             MessageLookupByLibrary.simpleMessage("كلمة المرور ضعيفة"),
-        "welcome_message": MessageLookupByLibrary.simpleMessage("مرحبًا بك في")
+        "welcome_message": MessageLookupByLibrary.simpleMessage("مرحبًا بك في"),
+        "you_have": MessageLookupByLibrary.simpleMessage("لديك ")
       };
 }

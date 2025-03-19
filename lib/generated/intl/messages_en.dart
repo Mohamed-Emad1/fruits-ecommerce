@@ -22,12 +22,14 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
+        "add_to_cart": MessageLookupByLibrary.simpleMessage("Add to cart"),
         "an_error_occurred":
             MessageLookupByLibrary.simpleMessage("An error occurred"),
         "apple": MessageLookupByLibrary.simpleMessage("sign in with apple"),
         "best_selling": MessageLookupByLibrary.simpleMessage("Best Selling"),
         "call_to_action":
             MessageLookupByLibrary.simpleMessage("Search and Shop."),
+        "checkout": MessageLookupByLibrary.simpleMessage("Checkout"),
         "conditions":
             MessageLookupByLibrary.simpleMessage("Terms & Conditions"),
         "create_account":
@@ -57,6 +59,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "home": MessageLookupByLibrary.simpleMessage("Home"),
         "internet_con": MessageLookupByLibrary.simpleMessage(
             "make sure you are connected to the internet"),
+        "items": MessageLookupByLibrary.simpleMessage("items in your cart"),
         "login": MessageLookupByLibrary.simpleMessage("login"),
         "more": MessageLookupByLibrary.simpleMessage("More"),
         "morning": MessageLookupByLibrary.simpleMessage("Good Morning"),
@@ -67,6 +70,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "offer_25": MessageLookupByLibrary.simpleMessage("25% Off"),
         "or": MessageLookupByLibrary.simpleMessage("or"),
         "password": MessageLookupByLibrary.simpleMessage("password"),
+        "product_details":
+            MessageLookupByLibrary.simpleMessage("Product Details"),
         "products": MessageLookupByLibrary.simpleMessage("Products"),
         "results": MessageLookupByLibrary.simpleMessage("Results"),
         "search": MessageLookupByLibrary.simpleMessage("Search for"),
@@ -86,6 +91,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "user_not_found":
             MessageLookupByLibrary.simpleMessage("user not found"),
         "weak_password": MessageLookupByLibrary.simpleMessage("Weak password"),
-        "welcome_message": MessageLookupByLibrary.simpleMessage("Welcome in")
+        "welcome_message": MessageLookupByLibrary.simpleMessage("Welcome in"),
+        "you_have": MessageLookupByLibrary.simpleMessage("You have")
       };
 }

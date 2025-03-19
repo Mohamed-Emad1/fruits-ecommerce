@@ -43,7 +43,12 @@
   "products": "المنتجات",
   "shopping_cart": "عربة التسوق",
   "my_account": "حسابي",
-  "results": "نتائج "
+  "results": "نتائج ",
+  "profile": "الملف الشخصي",
+  "you_have": "لديك ",
+  "items": "عناصر في عربة التسوق",
+  "checkout": "الدفع",
+  "total": "المجموع"
   
   
 }
