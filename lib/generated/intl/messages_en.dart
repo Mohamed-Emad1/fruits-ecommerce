@@ -60,6 +60,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "internet_con": MessageLookupByLibrary.simpleMessage(
             "make sure you are connected to the internet"),
         "items": MessageLookupByLibrary.simpleMessage("items in your cart"),
+        "kg": MessageLookupByLibrary.simpleMessage("kg"),
         "login": MessageLookupByLibrary.simpleMessage("login"),
         "more": MessageLookupByLibrary.simpleMessage("More"),
         "morning": MessageLookupByLibrary.simpleMessage("Good Morning"),
@@ -70,6 +71,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "offer_25": MessageLookupByLibrary.simpleMessage("25% Off"),
         "or": MessageLookupByLibrary.simpleMessage("or"),
         "password": MessageLookupByLibrary.simpleMessage("password"),
+        "pound": MessageLookupByLibrary.simpleMessage("pound"),
         "product_details":
             MessageLookupByLibrary.simpleMessage("Product Details"),
         "products": MessageLookupByLibrary.simpleMessage("Products"),

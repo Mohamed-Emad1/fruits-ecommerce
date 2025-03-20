@@ -53,6 +53,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "internet_con": MessageLookupByLibrary.simpleMessage(
             "الرجاء التأكد من اتصالك بالانترنت"),
         "items": MessageLookupByLibrary.simpleMessage("عناصر في عربة التسوق"),
+        "kg": MessageLookupByLibrary.simpleMessage("كجم"),
         "login": MessageLookupByLibrary.simpleMessage("تسجيل الدخول"),
         "more": MessageLookupByLibrary.simpleMessage("المزيد"),
         "morning": MessageLookupByLibrary.simpleMessage("صباح الخير"),
@@ -63,6 +64,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "offer_25": MessageLookupByLibrary.simpleMessage("خصم 25%"),
         "or": MessageLookupByLibrary.simpleMessage("او"),
         "password": MessageLookupByLibrary.simpleMessage("كلمة المرور"),
+        "pound": MessageLookupByLibrary.simpleMessage("جنيه"),
         "products": MessageLookupByLibrary.simpleMessage("المنتجات"),
         "results": MessageLookupByLibrary.simpleMessage("نتائج "),
         "search": MessageLookupByLibrary.simpleMessage("ابحث عن..."),

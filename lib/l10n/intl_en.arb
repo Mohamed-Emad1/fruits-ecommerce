@@ -49,7 +49,9 @@
     "items":"items in your cart",
     "checkout":"Checkout",
     "add_to_cart":"Add to cart",
-    "product_details":"Product Details"
+    "product_details":"Product Details",
+    "pound":"pound",
+    "kg":"kg"
     
 
 }

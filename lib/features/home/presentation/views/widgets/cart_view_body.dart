@@ -35,7 +35,9 @@ class CartViewBody extends StatelessWidget {
                   ],
                 ),
               ),
-              const CartItemsList(),
+              const CartItemsList(
+                cartItems: [],
+              ),
             ],
           ),
         ),

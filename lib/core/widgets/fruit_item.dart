@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:fruitshup/core/entities/product_entity.dart';
 import 'package:fruitshup/core/utils/app_colors.dart';
 import 'package:fruitshup/core/utils/app_text_styles.dart';
 import 'package:fruitshup/core/widgets/custom_network_image.dart';
+import 'package:fruitshup/features/home/presentation/cubits/cart_cubit/cart_cubit.dart';
 
 class FruitItem extends StatelessWidget {
   const FruitItem({super.key, required this.product});
@@ -49,7 +51,9 @@ class FruitItem extends StatelessWidget {
                 ),
                 ListTile(
                   trailing: GestureDetector(
-                    onTap: () {},
+                    onTap: () {
+                      context.read<CartCubit>().addProduct(product);
+                    },
                     child: const CircleAvatar(
                       backgroundColor: AppColors.primaryColor,
                       child: Icon(
@@ -84,5 +88,3 @@ class FruitItem extends StatelessWidget {
     );
   }
 }
-
-
