@@ -43,7 +43,9 @@ class CartItem extends StatelessWidget {
                 color: const Color(0xffF4A91F),
               ),
             ),
-            const CartItemButtons(),
+            CartItemButtons(
+              quantity: cartItemEntity.quantity,
+            ),
           ],
         ),
         const Spacer(),

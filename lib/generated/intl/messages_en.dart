@@ -23,6 +23,7 @@ class MessageLookup extends MessageLookupByLibrary {
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
         "add_to_cart": MessageLookupByLibrary.simpleMessage("Add to cart"),
+        "added_to_cart": MessageLookupByLibrary.simpleMessage("Added to cart"),
         "an_error_occurred":
             MessageLookupByLibrary.simpleMessage("An error occurred"),
         "apple": MessageLookupByLibrary.simpleMessage("sign in with apple"),
@@ -32,6 +33,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "checkout": MessageLookupByLibrary.simpleMessage("Checkout"),
         "conditions":
             MessageLookupByLibrary.simpleMessage("Terms & Conditions"),
+        "continue_shopping":
+            MessageLookupByLibrary.simpleMessage("Continue Shopping"),
         "create_account":
             MessageLookupByLibrary.simpleMessage("create new account"),
         "create_new_account":
@@ -71,10 +74,13 @@ class MessageLookup extends MessageLookupByLibrary {
         "offer_25": MessageLookupByLibrary.simpleMessage("25% Off"),
         "or": MessageLookupByLibrary.simpleMessage("or"),
         "password": MessageLookupByLibrary.simpleMessage("password"),
+        "pay": MessageLookupByLibrary.simpleMessage("Pay"),
         "pound": MessageLookupByLibrary.simpleMessage("pound"),
         "product_details":
             MessageLookupByLibrary.simpleMessage("Product Details"),
         "products": MessageLookupByLibrary.simpleMessage("Products"),
+        "removed_from_cart":
+            MessageLookupByLibrary.simpleMessage("Removed from cart"),
         "results": MessageLookupByLibrary.simpleMessage("Results"),
         "search": MessageLookupByLibrary.simpleMessage("Search for"),
         "shop_now": MessageLookupByLibrary.simpleMessage("Shop now"),
@@ -90,6 +96,7 @@ class MessageLookup extends MessageLookupByLibrary {
             "Please Accept our Terms and conditions"),
         "title": MessageLookupByLibrary.simpleMessage(
             "Discover a Unique Shopping Experience with FruitHUB"),
+        "total": MessageLookupByLibrary.simpleMessage("Total"),
         "user_not_found":
             MessageLookupByLibrary.simpleMessage("user not found"),
         "weak_password": MessageLookupByLibrary.simpleMessage("Weak password"),

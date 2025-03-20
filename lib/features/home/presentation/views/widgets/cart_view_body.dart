@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:fruitshup/constants.dart';
 import 'package:fruitshup/core/widgets/custom_button.dart';
 import 'package:fruitshup/core/widgets/custom_header.dart';
+import 'package:fruitshup/features/home/presentation/cubits/cart_cubit/cart_cubit.dart';
 import 'package:fruitshup/features/home/presentation/views/widgets/cart_header.dart';
 import 'package:fruitshup/features/home/presentation/views/widgets/cart_items_list.dart';
 import 'package:fruitshup/generated/l10n.dart';
@@ -35,8 +37,8 @@ class CartViewBody extends StatelessWidget {
                   ],
                 ),
               ),
-              const CartItemsList(
-                cartItems: [],
+              CartItemsList(
+                cartItems: context.watch<CartCubit>().cart.cartItems,
               ),
             ],
           ),
@@ -46,7 +48,8 @@ class CartViewBody extends StatelessWidget {
           left: 16,
           right: 16,
           child: CustomButton(
-            text: "Checkout",
+            text:
+                "${S.of(context).pay} ${context.watch<CartCubit>().cart.calculateTotalPrice()}  ${S.of(context).pound}",
             onPressed: () {},
           ),
         )

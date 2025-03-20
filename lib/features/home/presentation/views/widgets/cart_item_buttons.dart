@@ -5,8 +5,10 @@ import 'package:fruitshup/features/home/presentation/views/widgets/cart_item_but
 
 class CartItemButtons extends StatelessWidget {
   const CartItemButtons({
-    super.key,
+    super.key, required this.quantity,
   });
+
+  final int quantity;
 
   @override
   Widget build(BuildContext context) {
@@ -21,7 +23,7 @@ class CartItemButtons extends StatelessWidget {
           width: 10,
         ),
         Text(
-          "1",
+          quantity.toString(),
           style: AppTextStyles.bold16.copyWith(
             color: const Color(0xff06140C),
           ),

@@ -51,7 +51,12 @@
     "add_to_cart":"Add to cart",
     "product_details":"Product Details",
     "pound":"pound",
-    "kg":"kg"
+    "kg":"kg",
+    "added_to_cart":"Added to cart",
+    "removed_from_cart":"Removed from cart",
+    "total":"Total",
+    "continue_shopping":"Continue Shopping",
+    "pay":"Pay"
     
 
 }

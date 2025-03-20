@@ -22,6 +22,8 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
+        "add_to_cart":
+            MessageLookupByLibrary.simpleMessage("تم الإضافة للعربة"),
         "an_error_occurred": MessageLookupByLibrary.simpleMessage("حدث خطأ"),
         "apple": MessageLookupByLibrary.simpleMessage("تسجيل بواسطة أبل"),
         "best_selling": MessageLookupByLibrary.simpleMessage("الاكثر مبيعا"),
@@ -29,6 +31,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "checkout": MessageLookupByLibrary.simpleMessage("الدفع"),
         "conditions":
             MessageLookupByLibrary.simpleMessage(" الشروط والأحكام الخاصة بنا"),
+        "continue_shopping":
+            MessageLookupByLibrary.simpleMessage("استمر في التسوق"),
         "create_account":
             MessageLookupByLibrary.simpleMessage(" قم بإنشاء حساب جديد "),
         "create_new_account":
@@ -64,6 +68,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "offer_25": MessageLookupByLibrary.simpleMessage("خصم 25%"),
         "or": MessageLookupByLibrary.simpleMessage("او"),
         "password": MessageLookupByLibrary.simpleMessage("كلمة المرور"),
+        "pay": MessageLookupByLibrary.simpleMessage("ادفع"),
         "pound": MessageLookupByLibrary.simpleMessage("جنيه"),
         "products": MessageLookupByLibrary.simpleMessage("المنتجات"),
         "results": MessageLookupByLibrary.simpleMessage("نتائج "),
@@ -81,6 +86,7 @@ class MessageLookup extends MessageLookupByLibrary {
             "الرجاء الموافقة على الشروط والأحكام الخاصة بنا"),
         "title": MessageLookupByLibrary.simpleMessage(
             "اكتشف تجربة تسوق فريدة مع FruitHUB"),
+        "total": MessageLookupByLibrary.simpleMessage("المجموع"),
         "user_not_found":
             MessageLookupByLibrary.simpleMessage("المستخدم غير موجود"),
         "weak_password":
