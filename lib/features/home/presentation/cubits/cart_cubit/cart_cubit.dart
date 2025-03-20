@@ -1,5 +1,6 @@
 import 'package:bloc/bloc.dart';
 import 'package:fruitshup/core/entities/cart_entity.dart';
+import 'package:fruitshup/core/entities/cart_item_entity.dart';
 import 'package:fruitshup/core/entities/product_entity.dart';
 import 'package:meta/meta.dart';
 
@@ -17,6 +18,12 @@ class CartCubit extends Cubit<CartState> {
     } else {
       cart.cartItems.add(cartItem);
     }
-    emit(CartProductAdded());
+    emit(CartItemAdded());
   }
+
+  void deleteItem(CartItemEntity cartItemEntity) {
+    cart.removeItem(cartItemEntity);
+    emit(CartItemRemoved());
+  }
+
 }

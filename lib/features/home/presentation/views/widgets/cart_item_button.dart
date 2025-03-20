@@ -6,11 +6,13 @@ class CartItemButton extends StatelessWidget {
     required this.icon,
     required this.backgroundColor,
     required this.iconColor,
+    this.onPressed,
   });
 
   final IconData icon;
   final Color backgroundColor;
   final Color iconColor;
+  final void Function()? onPressed;
 
   @override
   Widget build(BuildContext context) {
@@ -20,7 +22,7 @@ class CartItemButton extends StatelessWidget {
       child: FittedBox(
         fit: BoxFit.contain,
         child: IconButton(
-          onPressed: () {},
+          onPressed: onPressed,
           icon: Icon(
             icon,
             color: iconColor,

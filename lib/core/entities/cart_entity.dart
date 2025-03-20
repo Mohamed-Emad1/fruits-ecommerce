@@ -27,12 +27,16 @@ class CartEntity {
     return false;
   }
 
-  CartItemEntity getCartItem(ProductEntity productEntity){
-      for (var item in cartItems) {
+  CartItemEntity getCartItem(ProductEntity productEntity) {
+    for (var item in cartItems) {
       if (item.product == productEntity) {
         return item;
       }
     }
-    return CartItemEntity(product: productEntity , quantity: 1);
+    return CartItemEntity(product: productEntity, quantity: 1);
+  }
+
+  void removeItem(CartItemEntity cartItemEntity) {
+    cartItems.remove(cartItemEntity);
   }
 }
