@@ -24,6 +24,7 @@ class MessageLookup extends MessageLookupByLibrary {
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
         "add_to_cart": MessageLookupByLibrary.simpleMessage("Add to cart"),
         "added_to_cart": MessageLookupByLibrary.simpleMessage("Added to cart"),
+        "address": MessageLookupByLibrary.simpleMessage("Address"),
         "an_error_occurred":
             MessageLookupByLibrary.simpleMessage("An error occurred"),
         "apple": MessageLookupByLibrary.simpleMessage("sign in with apple"),
@@ -69,12 +70,15 @@ class MessageLookup extends MessageLookupByLibrary {
         "morning": MessageLookupByLibrary.simpleMessage("Good Morning"),
         "my_account": MessageLookupByLibrary.simpleMessage("My Account"),
         "new_account": MessageLookupByLibrary.simpleMessage("new account"),
+        "next": MessageLookupByLibrary.simpleMessage("next"),
         "offer": MessageLookupByLibrary.simpleMessage(
             "We offer you the finest carefully selected fruits. Browse details, images, and reviews to ensure you choose the perfect fruit."),
         "offer_25": MessageLookupByLibrary.simpleMessage("25% Off"),
         "or": MessageLookupByLibrary.simpleMessage("or"),
+        "order": MessageLookupByLibrary.simpleMessage("Order"),
         "password": MessageLookupByLibrary.simpleMessage("password"),
         "pay": MessageLookupByLibrary.simpleMessage("Pay"),
+        "payment": MessageLookupByLibrary.simpleMessage("Payment"),
         "pound": MessageLookupByLibrary.simpleMessage("pound"),
         "product_details":
             MessageLookupByLibrary.simpleMessage("Product Details"),
@@ -82,6 +86,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "removed_from_cart":
             MessageLookupByLibrary.simpleMessage("Removed from cart"),
         "results": MessageLookupByLibrary.simpleMessage("Results"),
+        "review": MessageLookupByLibrary.simpleMessage("Review"),
         "search": MessageLookupByLibrary.simpleMessage("Search for"),
         "shop_now": MessageLookupByLibrary.simpleMessage("Shop now"),
         "shopping_cart": MessageLookupByLibrary.simpleMessage("Shopping Cart"),

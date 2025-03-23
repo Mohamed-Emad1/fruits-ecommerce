@@ -47,14 +47,19 @@
   "profile": "الملف الشخصي",
   "you_have": "لديك ",
   "items": "عناصر في عربة التسوق",
-  "checkout": "الدفع",
+  "checkout": "الشحن",
   "total": "المجموع",
   "pound": "جنيه",
   "kg": "كجم",
   "add_to_cart": "تم الإضافة للعربة",
   "remove_from_cart": "تم الحذف من العربة",
   "continue_shopping": "استمر في التسوق",
-  "pay": "ادفع"
+  "pay": "ادفع",
+  "address": "العنوان",
+  "payment": " الدفع",
+  "review": "المراجعة",
+  "next": "التالي"
+
   
   
 }

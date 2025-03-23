@@ -24,11 +24,12 @@ class MessageLookup extends MessageLookupByLibrary {
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
         "add_to_cart":
             MessageLookupByLibrary.simpleMessage("تم الإضافة للعربة"),
+        "address": MessageLookupByLibrary.simpleMessage("العنوان"),
         "an_error_occurred": MessageLookupByLibrary.simpleMessage("حدث خطأ"),
         "apple": MessageLookupByLibrary.simpleMessage("تسجيل بواسطة أبل"),
         "best_selling": MessageLookupByLibrary.simpleMessage("الاكثر مبيعا"),
         "call_to_action": MessageLookupByLibrary.simpleMessage("ابحث وتسوق."),
-        "checkout": MessageLookupByLibrary.simpleMessage("الدفع"),
+        "checkout": MessageLookupByLibrary.simpleMessage("الشحن"),
         "conditions":
             MessageLookupByLibrary.simpleMessage(" الشروط والأحكام الخاصة بنا"),
         "continue_shopping":
@@ -63,15 +64,18 @@ class MessageLookup extends MessageLookupByLibrary {
         "morning": MessageLookupByLibrary.simpleMessage("صباح الخير"),
         "my_account": MessageLookupByLibrary.simpleMessage("حسابي"),
         "new_account": MessageLookupByLibrary.simpleMessage("حساب جديد"),
+        "next": MessageLookupByLibrary.simpleMessage("التالي"),
         "offer": MessageLookupByLibrary.simpleMessage(
             "نقدم لك أفضل الفواكه المختارة بعناية. اطلع على التفاصيل والصور والتقييمات لتتأكد من اختيار الفاكهة المثالية."),
         "offer_25": MessageLookupByLibrary.simpleMessage("خصم 25%"),
         "or": MessageLookupByLibrary.simpleMessage("او"),
         "password": MessageLookupByLibrary.simpleMessage("كلمة المرور"),
         "pay": MessageLookupByLibrary.simpleMessage("ادفع"),
+        "payment": MessageLookupByLibrary.simpleMessage(" الدفع"),
         "pound": MessageLookupByLibrary.simpleMessage("جنيه"),
         "products": MessageLookupByLibrary.simpleMessage("المنتجات"),
         "results": MessageLookupByLibrary.simpleMessage("نتائج "),
+        "review": MessageLookupByLibrary.simpleMessage("المراجعة"),
         "search": MessageLookupByLibrary.simpleMessage("ابحث عن..."),
         "shop_now": MessageLookupByLibrary.simpleMessage("تسوق الآن"),
         "shopping_cart": MessageLookupByLibrary.simpleMessage("عربة التسوق"),

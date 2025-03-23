@@ -56,7 +56,13 @@
     "removed_from_cart":"Removed from cart",
     "total":"Total",
     "continue_shopping":"Continue Shopping",
-    "pay":"Pay"
+    "pay":"Pay",
+    "address":"Address",
+    "payment":"Payment",
+    "review":"Review",
+    "order":"Order",
+    "next": "next"
+
     
 
 }
