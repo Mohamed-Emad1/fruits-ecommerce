@@ -58,7 +58,12 @@
   "address": "العنوان",
   "payment": " الدفع",
   "review": "المراجعة",
-  "next": "التالي"
+  "next": "التالي",
+   "Delivery_from_Location": "التسليم من المكان",
+  "Cash_on_Delivery": "الدفع عند الاستلام",
+  "Buy_Now": "اشتري اونلاين",
+  "payment_method": "يرجي تحديد طريقه الدفع",
+  "free": "مجاني"
 
   
   

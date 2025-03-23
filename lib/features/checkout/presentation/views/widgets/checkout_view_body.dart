@@ -31,10 +31,13 @@ class _CheckoutViewBodyState extends State<CheckoutViewBody> {
             height: 20,
           ),
           const CheckoutSteps(),
-          CheckoutStepsPageView(pageController: _pageController),
           const SizedBox(
-            height: 100,
+            height: 32,
           ),
+          CheckoutStepsPageView(pageController: _pageController),
+          // const SizedBox(
+          //   height: 30,
+          // ),
           CustomButton(
             text: S.of(context).next,
             onPressed: () {},
@@ -45,5 +48,3 @@ class _CheckoutViewBodyState extends State<CheckoutViewBody> {
     );
   }
 }
-
-

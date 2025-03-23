@@ -61,7 +61,12 @@
     "payment":"Payment",
     "review":"Review",
     "order":"Order",
-    "next": "next"
+    "next": "next",
+  "Delivery_from_Location": "Delivery from Location  ",
+  "Cash_on_Delivery": "Cash on Delivery",
+  "Buy_Now": "Buy online",
+  "payment_method": "Please select a payment method",
+  "free": "free"
 
     
 

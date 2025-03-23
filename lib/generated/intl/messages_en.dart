@@ -22,6 +22,11 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
+        "Buy_Now": MessageLookupByLibrary.simpleMessage("Buy online"),
+        "Cash_on_Delivery":
+            MessageLookupByLibrary.simpleMessage("Cash on Delivery"),
+        "Delivery_from_Location":
+            MessageLookupByLibrary.simpleMessage("Delivery from Location  "),
         "add_to_cart": MessageLookupByLibrary.simpleMessage("Add to cart"),
         "added_to_cart": MessageLookupByLibrary.simpleMessage("Added to cart"),
         "address": MessageLookupByLibrary.simpleMessage("Address"),
@@ -56,6 +61,7 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("sign in with facebook"),
         "forget_password":
             MessageLookupByLibrary.simpleMessage("forget password?"),
+        "free": MessageLookupByLibrary.simpleMessage("free"),
         "full_name": MessageLookupByLibrary.simpleMessage("full name"),
         "google": MessageLookupByLibrary.simpleMessage("sign in with google"),
         "have_account":
@@ -79,6 +85,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "password": MessageLookupByLibrary.simpleMessage("password"),
         "pay": MessageLookupByLibrary.simpleMessage("Pay"),
         "payment": MessageLookupByLibrary.simpleMessage("Payment"),
+        "payment_method": MessageLookupByLibrary.simpleMessage(
+            "Please select a payment method"),
         "pound": MessageLookupByLibrary.simpleMessage("pound"),
         "product_details":
             MessageLookupByLibrary.simpleMessage("Product Details"),

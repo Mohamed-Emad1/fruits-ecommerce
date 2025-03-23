@@ -22,6 +22,11 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
+        "Buy_Now": MessageLookupByLibrary.simpleMessage("اشتري اونلاين"),
+        "Cash_on_Delivery":
+            MessageLookupByLibrary.simpleMessage("الدفع عند الاستلام"),
+        "Delivery_from_Location":
+            MessageLookupByLibrary.simpleMessage("التسليم من المكان"),
         "add_to_cart":
             MessageLookupByLibrary.simpleMessage("تم الإضافة للعربة"),
         "address": MessageLookupByLibrary.simpleMessage("العنوان"),
@@ -51,6 +56,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "facebook": MessageLookupByLibrary.simpleMessage("تسجيل بواسطة فيسبوك"),
         "forget_password":
             MessageLookupByLibrary.simpleMessage("هل نسيت كلمة المرور؟"),
+        "free": MessageLookupByLibrary.simpleMessage("مجاني"),
         "full_name": MessageLookupByLibrary.simpleMessage("الاسم بالكامل"),
         "google": MessageLookupByLibrary.simpleMessage("تسجيل بواسطة جوجل"),
         "have_account": MessageLookupByLibrary.simpleMessage("لديك حساب؟"),
@@ -72,6 +78,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "password": MessageLookupByLibrary.simpleMessage("كلمة المرور"),
         "pay": MessageLookupByLibrary.simpleMessage("ادفع"),
         "payment": MessageLookupByLibrary.simpleMessage(" الدفع"),
+        "payment_method":
+            MessageLookupByLibrary.simpleMessage("يرجي تحديد طريقه الدفع"),
         "pound": MessageLookupByLibrary.simpleMessage("جنيه"),
         "products": MessageLookupByLibrary.simpleMessage("المنتجات"),
         "results": MessageLookupByLibrary.simpleMessage("نتائج "),
